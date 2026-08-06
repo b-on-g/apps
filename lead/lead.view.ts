@@ -33,8 +33,10 @@ namespace $.$$ {
 				this.Contact_field(),
 				this.Submit(),
 			] as readonly any[]
-			if( base.has_entry() ) return [ ...rows, this.Sent_note() ]
-			return rows
+			const tail = [] as any[]
+			if( base.has_entry() ) tail.push( this.Sent_note() )
+			if( base.is_owner() ) tail.push( this.Entries() )
+			return [ ...rows, ...tail ]
 		}
 
 	}
