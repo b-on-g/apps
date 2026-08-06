@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru" mol_view_root>
+	<head>
+		<meta charset="utf-8" />
+		<meta lang="ru" />
+		<title>Кирилл Новгородцев — веб-приложения</title>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link href="bog/apps/assets/logo.svg" rel="icon" />
+		<meta name="description" content="Разработка веб-приложений, которые работают как нативные: офлайн, на всех платформах, без серверной инфраструктуры." />
+		<meta property="og:title" content="Кирилл Новгородцев — веб-приложения" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Разработка веб-приложений, которые работают как нативные: офлайн, на всех платформах, без серверной инфраструктуры." />
+		<meta property="og:site_name" content="Кирилл Новгородцев" />
+		<meta property="og:url" content="https://b-on-g.github.io/apps/" />
+		<link rel="manifest" href="manifest.json" />
+	</head>
+	<body mol_view_root>
+		<div mol_view_root="$bog_apps_app"></div>
+		<script src="web.js"></script>
+	
+				<script src="/mol/build/client/client.js" charset="utf-8"></script>
+				<script src="web.test.js" charset="utf-8"></script>
+				<script>
+					addEventListener( 'load', ()=> setTimeout( ()=> {
+						const audit =  document.createElement( 'script' )
+						audit.src = 'web.audit.js'
+						document.head.appendChild( audit )
+					}, 500 ) )
+				</script>
+				</body>
+</html>
