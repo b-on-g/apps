@@ -4,15 +4,15 @@
 
 **Прод:** https://b-on-g.github.io/apps/
 
-Заявки с формы падают в Гипер Базу (реестр feedback2, `feedback_id: apps`) — отвечать под своим аккаунтом прямо в форме на проде.
+Дизайн — по образцу smalljs (builderui-токены: zinc + sky, Inter / EB Garamond, оранжевый акцент). Вместо формы заявок — кнопка в Telegram с подставленным сообщением.
 
 ## Dev
 
 ```bash
 cd /path/to/mam && npm start
-# Открыть http://localhost:9080/bog/apps/app/-/test.html
+# Открыть http://localhost:9080/bog/apps/app/-/index.html
 ```
 
 ## Deploy
 
-Push в `main` → GitHub Actions → GitHub Pages.
+Push в `main` → GitHub Actions → GitHub Pages (если пуш-триггер не сработал — запустить деплой руками: `gh workflow run deploy.yml --repo b-on-g/apps --ref main`).
