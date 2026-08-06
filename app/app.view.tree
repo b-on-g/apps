@@ -1,14 +1,14 @@
-$bog_apps_app $mol_page
+$bog_apps_app $bog_builderui_div
 	title \Кирилл Новгородцев — веб-приложения
-	head /
-		<= Title
-		<= Tools
-	tools /
-		<= Sources $mol_link_source
-			uri \https://github.com/b-on-g/apps
-		<= Status $giper_baza_status
-		<= Theme_toggle $bog_theme_toggle
-			theme_auto <= Theme
+	lights \light
+	attr *
+		^
+		bog_builderui_lights <= lights
+		bog_builderui_base \zinc
+		bog_builderui_theme \sky
+		bog_builderui_radius \medium
+		bog_builderui_font_body \inter
+		bog_builderui_font_head \eb-garamond
 	plugins /
 		<= Theme $bog_theme_auto
 			theme_light \$mol_theme_calm_light
@@ -16,18 +16,24 @@ $bog_apps_app $mol_page
 			themes /
 				\$mol_theme_calm_light
 				\$mol_theme_calm_dark
+		<= Favicon $bog_favicon
+			Icon <= Favicon_icon $mol_icon_rocket_launch
 	Feature* $mol_view
 		sub /
-			<= Feature_title* $mol_paragraph
-				title <= feature_title* \
-			<= Feature_text* $mol_paragraph
-				title <= feature_text* \
+			<= Feature_title* $mol_view
+				sub /
+					<= feature_title* \
+			<= Feature_text* $mol_view
+				sub /
+					<= feature_text* \
 	Case* $mol_view
 		sub /
-			<= Case_title* $mol_paragraph
-				title <= case_title* \
-			<= Case_text* $mol_paragraph
-				title <= case_text* \
+			<= Case_title* $mol_view
+				sub /
+					<= case_title* \
+			<= Case_text* $mol_view
+				sub /
+					<= case_text* \
 			<= Case_links* $mol_view
 				sub /
 					<= Case_demo* $mol_link
@@ -42,62 +48,113 @@ $bog_apps_app $mol_page
 							\Исходники
 	Step* $mol_view
 		sub /
-			<= Step_num* $mol_paragraph
-				title <= step_num* \
-			<= Step_body* $mol_view
+			<= Step_num* $mol_view
 				sub /
-					<= Step_title* $mol_paragraph
-						title <= step_title* \
-					<= Step_text* $mol_paragraph
-						title <= step_text* \
-	body /
-		<= Hero $mol_view
+					<= step_num* \
+			<= Step_title* $mol_view
+				sub /
+					<= step_title* \
+			<= Step_text* $mol_view
+				sub /
+					<= step_text* \
+	sub /
+		<= Top $mol_view
 			sub /
-				<= Hero_title $mol_paragraph
-					title \Веб-приложения, которые работают как нативные
-				<= Hero_text $mol_paragraph
-					title \Меня зовут Кирилл Новгородцев. Делаю сайты и веб-аппки, которые ставятся на телефон, работают офлайн и не требуют серверной инфраструктуры.
-				<= Hero_actions $mol_view
+				<= Top_name $mol_view
 					sub /
-						<= Lead_scroll $mol_button_major
-							title \Оставить заявку
-							click? <=> lead_scroll? null
-						<= Tg_link $mol_link
-							uri \https://t.me/Dev_cmyser
+						\Кирилл Новгородцев
+				<= Top_tools $mol_view
+					sub /
+						<= Top_tg $mol_link
+							uri <= tg_uri \
 							target \_blank
 							sub /
-								\Написать в Telegram
-		<= Features $mol_view
+								\Telegram
+						<= Theme_toggle $bog_theme_toggle
+							theme_auto <= Theme
+		<= Body $mol_view
+			dom_name \main
 			sub /
-				<= Features_title $mol_paragraph
-					title \Что вы получаете
-				<= Features_list $mol_view
+				<= Hero $mol_view
+					sub /
+						<= Hero_head $mol_view
+							sub /
+								<= Hero_eyebrow $mol_view
+									sub /
+										\Local-first веб-приложения
+								<= Hero_title $mol_view
+									dom_name \h1
+									sub /
+										\Веб-приложения, которые работают
+										<= Hero_title_accent $mol_view
+											dom_name \span
+											sub /
+												\как нативные
+								<= Hero_subtitle $mol_view
+									sub /
+										\Меня зовут Кирилл Новгородцев. Делаю сайты и веб-аппки: офлайн, на всех платформах, без серверной инфраструктуры.
+								<= Hero_actions $mol_view
+									sub /
+										<= Cta_tg $mol_link
+											uri <= tg_uri \
+											target \_blank
+											sub /
+												<= Cta_tg_label $mol_view
+													dom_name \span
+													sub /
+														\Написать в Telegram
+												<= Cta_tg_icon $mol_icon_arrow_right
+										<= Cta_cases $mol_button_minor
+											click? <=> cases_scroll? null
+											sub /
+												<= Cta_cases_label $mol_view
+													dom_name \span
+													sub /
+														\Посмотреть кейсы
+				<= Features $mol_view
 					sub <= feature_cards /
-		<= Cases $mol_view
-			sub /
-				<= Cases_title $mol_paragraph
-					title \Кейсы
-				<= Cases_list $mol_view
-					sub <= case_cards /
-		<= Process $mol_view
-			sub /
-				<= Process_title $mol_paragraph
-					title \Как идёт работа
-				<= Process_list $mol_view
-					sub <= step_cards /
-		<= Lead_section $mol_view
-			sub /
-				<= Lead_title $mol_paragraph
-					title \Оставить заявку
-				<= Lead $bog_apps_lead
-		<= Requisites $mol_view
-			sub /
-				<= Requisites_title $mol_paragraph
-					title \Реквизиты
-				<= Requisites_text $mol_text
-					text \
-						\**ИП Новгородцев Кирилл Александрович**
-						\
-						\ОГРНИП 325350000056770, ИНН 351400789430
-						\
-						\Почта: [cmyser.fast@mail.ru](mailto:cmyser.fast@mail.ru), Telegram: [@Dev_cmyser](https://t.me/Dev_cmyser)
+				<= Cases $mol_view
+					sub /
+						<= Cases_title $mol_view
+							dom_name \h2
+							sub /
+								\Кейсы
+						<= Cases_list $mol_view
+							sub <= case_cards /
+				<= Process $mol_view
+					sub /
+						<= Process_title $mol_view
+							dom_name \h2
+							sub /
+								\Как идёт работа
+						<= Process_list $mol_view
+							sub <= step_cards /
+				<= Footer $mol_view
+					sub /
+						<= Requisites $mol_view
+							sub /
+								<= Requisites_title $mol_view
+									sub /
+										\Реквизиты
+								<= Requisites_name $mol_view
+									sub /
+										\ИП Новгородцев Кирилл Александрович
+								<= Requisites_ids $mol_view
+									sub /
+										\ОГРНИП 325350000056770 · ИНН 351400789430
+								<= Requisites_contacts $mol_view
+									sub /
+										<= Mail_link $mol_link
+											uri \mailto:cmyser.fast@mail.ru
+											sub /
+												\cmyser.fast@mail.ru
+										<= Tg_link $mol_link
+											uri <= tg_uri \
+											target \_blank
+											sub /
+												\@Dev_cmyser
+										<= Github_link $mol_link
+											uri \https://github.com/b-on-g/apps
+											target \_blank
+											sub /
+												\Исходники сайта

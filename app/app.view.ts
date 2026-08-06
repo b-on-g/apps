@@ -51,7 +51,7 @@ namespace $.$$ {
 	const steps = [
 		{
 			title: 'Заявка',
-			text: 'Опишите задачу в форме ниже или напишите в Telegram — обсудим объём и сроки.',
+			text: 'Напишите в Telegram пару предложений: что за продукт и для кого — обсудим объём и сроки.',
 		},
 		{
 			title: 'Прототип',
@@ -68,6 +68,14 @@ namespace $.$$ {
 	]
 
 	export class $bog_apps_app extends $.$bog_apps_app {
+
+		tg_uri() {
+			return 'https://t.me/Dev_cmyser?text=' + encodeURIComponent( 'Добрый день! Пишу по поводу веб-приложения.' )
+		}
+
+		lights() {
+			return this.Theme().is_light_now() ? 'light' : 'dark'
+		}
 
 		feature_cards() {
 			return Object.keys( features ).map( id => this.Feature( id ) )
@@ -106,7 +114,7 @@ namespace $.$$ {
 		}
 
 		step_num( i: number ) {
-			return String( i + 1 )
+			return '0' + ( i + 1 )
 		}
 
 		step_title( i: number ) {
@@ -118,8 +126,8 @@ namespace $.$$ {
 		}
 
 		@ $mol_action
-		lead_scroll() {
-			this.Lead_section().dom_node().scrollIntoView()
+		cases_scroll() {
+			this.Cases().dom_node().scrollIntoView({ behavior: 'smooth' })
 		}
 
 	}
