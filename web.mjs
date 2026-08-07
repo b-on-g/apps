@@ -11738,7 +11738,7 @@ var $;
                 source: 'https://github.com/b-on-g/music',
             },
             smalljs: {
-                title: 'smalljs',
+                title: 'Small JS',
                 text: 'Сайт документации веб-фреймворка: гайды на 15 языках, полнотекстовый и семантический поиск, песочница с живым кодом и интерактивный курс.',
                 demo: 'https://b-on-g.github.io/smalljs/',
                 source: 'https://github.com/b-on-g/smalljs',
