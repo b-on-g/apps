@@ -12066,7 +12066,7 @@ var $;
         ];
         class $bog_apps_app extends $.$bog_apps_app {
             tg_uri() {
-                return 'https://t.me/Dev_cmyser?text=' + encodeURIComponent('Добрый день! Пишу по поводу веб-приложения.');
+                return 'https://t.me/Dev_cmyser?text=' + encodeURIComponent('Добрый день! Пишу с вашего сайта — есть задача на веб-приложение, хочу обсудить.');
             }
             lights() {
                 return this.Theme().is_light_now() ? 'light' : 'dark';
