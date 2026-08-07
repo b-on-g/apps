@@ -46,6 +46,12 @@ namespace $.$$ {
 			demo: 'https://b-on-g.github.io/music/',
 			source: 'https://github.com/b-on-g/music',
 		},
+		smalljs: {
+			title: 'smalljs',
+			text: 'Сайт документации веб-фреймворка: гайды на 15 языках, полнотекстовый и семантический поиск, песочница с живым кодом и интерактивный курс.',
+			demo: 'https://b-on-g.github.io/smalljs/',
+			source: 'https://github.com/b-on-g/smalljs',
+		},
 	} as Record< string, { title: string, text: string, demo: string, source: string } >
 
 	const steps = [

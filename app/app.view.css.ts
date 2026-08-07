@@ -188,7 +188,7 @@ namespace $ {
 
 		Cases_list: {
 			display: 'grid',
-			gridTemplateColumns: 'repeat(3, 1fr)',
+			gridTemplateColumns: '1fr 1fr',
 			gap: rem( 1.25 ),
 		},
 
