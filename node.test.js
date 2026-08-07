@@ -12036,6 +12036,12 @@ var $;
                 demo: 'https://b-on-g.github.io/music/',
                 source: 'https://github.com/b-on-g/music',
             },
+            smalljs: {
+                title: 'smalljs',
+                text: 'Сайт документации веб-фреймворка: гайды на 15 языках, полнотекстовый и семантический поиск, песочница с живым кодом и интерактивный курс.',
+                demo: 'https://b-on-g.github.io/smalljs/',
+                source: 'https://github.com/b-on-g/smalljs',
+            },
         };
         const steps = [
             {
@@ -12274,7 +12280,7 @@ var $;
         },
         Cases_list: {
             display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
+            gridTemplateColumns: '1fr 1fr',
             gap: rem(1.25),
         },
         Case: {
