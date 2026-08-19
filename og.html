@@ -1,0 +1,93 @@
+<!doctype html>
+<!--
+	Исходник og-картинки. Рендерится в браузере (нужны те же Google Fonts,
+	что и на сайте), скриншотится ровно 1200x630 и кладётся в assets/og.png.
+	Держим рядом с сайтом, чтобы картинку можно было пересобрать под новый текст.
+-->
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<title>og card</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box }
+		html, body { background: #ffffff }
+		.card {
+			width: 1200px;
+			height: 630px;
+			background: #faf9f7;
+			color: #09090b;
+			border-top: 6px solid #cc6414;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 0 80px 40px;
+			font-family: Inter, system-ui, sans-serif;
+		}
+		.body {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		.eyebrow {
+			font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+			font-size: 20px;
+			font-weight: 500;
+			letter-spacing: 3.4px;
+			text-transform: uppercase;
+			color: #71717a;
+		}
+		h1 {
+			margin-top: 44px;
+			font-family: 'EB Garamond', Georgia, serif;
+			font-size: 76px;
+			font-weight: 500;
+			line-height: 1.14;
+			letter-spacing: -0.01em;
+			text-align: center;
+			max-width: 940px;
+		}
+		h1 span { color: #cc6414 }
+		.sub {
+			margin-top: 34px;
+			font-size: 25px;
+			line-height: 1.5;
+			color: #71717a;
+			text-align: center;
+			max-width: 780px;
+		}
+		.foot {
+			width: 100%;
+			padding-top: 28px;
+			border-top: 1px solid #e4e2de;
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
+		}
+		.name { font-size: 24px; font-weight: 600 }
+		.url {
+			font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+			font-size: 20px;
+			font-weight: 500;
+			color: #71717a;
+		}
+	</style>
+</head>
+<body>
+	<div class="card">
+		<div class="body">
+			<div class="eyebrow">Local-first веб-приложения</div>
+			<h1>Веб-приложения, которые работают <span>как нативные</span></h1>
+			<div class="sub">Офлайн, на всех платформах, без серверной инфраструктуры</div>
+		</div>
+		<div class="foot">
+			<div class="name">Кирилл Новгородцев</div>
+			<div class="url">b-on-g.github.io/apps</div>
+		</div>
+	</div>
+</body>
+</html>
