@@ -722,7 +722,7 @@ $mol_pop_over $mol_pop
 $bog_builderui_tooltip $mol_pop_over
 
 $bog_apps_app $bog_builderui_div
-	title \Кирилл Новгородцев — веб-приложения
+	title \Веб-приложения, которые работают как нативные — Кирилл Новгородцев
 	lights \light
 	attr *
 		^
@@ -812,7 +812,7 @@ $bog_apps_app $bog_builderui_div
 										<= Hero_title_accent $mol_view
 											dom_name \span
 											sub /
-												\как нативные
+												\ как нативные
 								<= Hero_subtitle $mol_view
 									sub /
 										\Меня зовут Кирилл Новгородцев. Делаю сайты и веб-аппки: офлайн, на всех платформах, без серверной инфраструктуры.

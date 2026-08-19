@@ -1,37 +1,2344 @@
-<!doctype html>
-<html lang="ru" mol_view_root>
-	<head>
-		<meta charset="utf-8" />
-		<meta lang="ru" />
-		<title>Кирилл Новгородцев — веб-приложения</title>
-		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
-		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="theme-color" content="#faf9f7" />
-		<link href="bog/apps/assets/logo.svg" rel="icon" />
-		<link rel="canonical" href="https://b-on-g.github.io/apps/" />
-		<meta name="description" content="Разработка веб-приложений, которые работают как нативные: офлайн, на всех платформах, без серверной инфраструктуры." />
-		<meta property="og:title" content="Кирилл Новгородцев — веб-приложения" />
-		<meta property="og:type" content="website" />
-		<meta property="og:description" content="Разработка веб-приложений, которые работают как нативные: офлайн, на всех платформах, без серверной инфраструктуры." />
-		<meta property="og:site_name" content="Кирилл Новгородцев" />
-		<meta property="og:url" content="https://b-on-g.github.io/apps/" />
-		<meta property="og:locale" content="ru_RU" />
-		<meta property="og:image" content="https://b-on-g.github.io/apps/bog/apps/assets/og.png" />
-		<meta property="og:image:secure_url" content="https://b-on-g.github.io/apps/bog/apps/assets/og.png" />
-		<meta property="og:image:type" content="image/png" />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
-		<meta property="og:image:alt" content="Веб-приложения, которые работают как нативные — Кирилл Новгородцев" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Кирилл Новгородцев — веб-приложения" />
-		<meta name="twitter:description" content="Разработка веб-приложений, которые работают как нативные: офлайн, на всех платформах, без серверной инфраструктуры." />
-		<meta name="twitter:image" content="https://b-on-g.github.io/apps/bog/apps/assets/og.png" />
-		<meta name="twitter:image:alt" content="Веб-приложения, которые работают как нативные — Кирилл Новгородцев" />
-		<link rel="manifest" href="manifest.json" />
-	</head>
-	<body mol_view_root>
-		<div mol_view_root="$bog_apps_app"></div>
+<!DOCTYPE html><html lang="ru" mol_view_root=""><head><base href="/apps/">
+		<meta charset="utf-8">
+		<meta lang="ru">
+		<title>Веб-приложения, которые работают как нативные — Кирилл Новгородцев</title>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#faf9f7">
+		<link href="data:image/svg+xml,%3Csvg%20id%3D%22%24bog_apps_app.Root(0).Favicon_icon()%22%20bog_apps_app_favicon_icon%3D%22%22%20mol_icon_rocket_launch%3D%22%22%20mol_icon%3D%22%22%20mol_svg_root%3D%22%22%20mol_svg%3D%22%22%20mol_view%3D%22%22%20viewBox%3D%220%200%2024%2024%22%20preserveAspectRatio%3D%22xMidYMid%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20id%3D%22%24bog_apps_app.Root(0).Favicon_icon().Path()%22%20mol_icon_rocket_launch_path%3D%22%22%20mol_icon_path%3D%22%22%20bog_apps_app_favicon_icon_path%3D%22%22%20mol_svg_path%3D%22%22%20mol_svg%3D%22%22%20mol_view%3D%22%22%20d%3D%22M13.13%2022.19L11.5%2018.36C13.07%2017.78%2014.54%2017%2015.9%2016.09L13.13%2022.19M5.64%2012.5L1.81%2010.87L7.91%208.1C7%209.46%206.22%2010.93%205.64%2012.5M21.61%202.39C21.61%202.39%2016.66%20.269%2011%205.93C8.81%208.12%207.5%2010.53%206.65%2012.64C6.37%2013.39%206.56%2014.21%207.11%2014.77L9.24%2016.89C9.79%2017.45%2010.61%2017.63%2011.36%2017.35C13.5%2016.53%2015.88%2015.19%2018.07%2013C23.73%207.34%2021.61%202.39%2021.61%202.39M14.54%209.46C13.76%208.68%2013.76%207.41%2014.54%206.63S16.59%205.85%2017.37%206.63C18.14%207.41%2018.15%208.68%2017.37%209.46C16.59%2010.24%2015.32%2010.24%2014.54%209.46M8.88%2016.53L7.47%2015.12L8.88%2016.53M6.24%2022L9.88%2018.36C9.54%2018.27%209.21%2018.12%208.91%2017.91L4.83%2022H6.24M2%2022H3.41L8.18%2017.24L6.76%2015.83L2%2020.59V22M2%2019.17L6.09%2015.09C5.88%2014.79%205.73%2014.47%205.64%2014.12L2%2017.76V19.17Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" rel="icon" type="image/svg+xml">
+		<link rel="canonical" href="https://b-on-g.github.io/apps/">
+		<meta name="description" content="Кирилл Новгородцев — разработка веб-приложений, которые работают как нативные: офлайн, на всех платформах из одной кодовой базы, без серверной инфраструктуры.">
+		<meta property="og:title" content="Веб-приложения, которые работают как нативные — Кирилл Новгородцев">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="Кирилл Новгородцев — разработка веб-приложений, которые работают как нативные: офлайн, на всех платформах из одной кодовой базы, без серверной инфраструктуры.">
+		<meta property="og:site_name" content="Кирилл Новгородцев">
+		<meta property="og:url" content="https://b-on-g.github.io/apps/">
+		<meta property="og:locale" content="ru_RU">
+		<meta property="og:image" content="https://b-on-g.github.io/apps/bog/apps/assets/og.png">
+		<meta property="og:image:secure_url" content="https://b-on-g.github.io/apps/bog/apps/assets/og.png">
+		<meta property="og:image:type" content="image/png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:image:alt" content="Веб-приложения, которые работают как нативные — Кирилл Новгородцев">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Веб-приложения, которые работают как нативные — Кирилл Новгородцев">
+		<meta name="twitter:description" content="Кирилл Новгородцев — разработка веб-приложений, которые работают как нативные: офлайн, на всех платформах из одной кодовой базы, без серверной инфраструктуры.">
+		<meta name="twitter:image" content="https://b-on-g.github.io/apps/bog/apps/assets/og.png">
+		<meta name="twitter:image:alt" content="Веб-приложения, которые работают как нативные — Кирилл Новгородцев">
+		<link rel="manifest" href="manifest.json">
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "Person",
+					"@id": "https://b-on-g.github.io/apps/#kirill",
+					"name": "Кирилл Новгородцев",
+					"jobTitle": "Разработчик веб-приложений",
+					"url": "https://b-on-g.github.io/apps/",
+					"email": "mailto:cmyser.fast@mail.ru",
+					"knowsAbout": [
+						"local-first веб-приложения",
+						"офлайн-first приложения",
+						"PWA",
+						"кроссплатформенная разработка",
+						"браузерные расширения",
+						"CRDT-синхронизация",
+						"end-to-end шифрование",
+						"$mol",
+						"TypeScript"
+					],
+					"sameAs": [
+						"https://github.com/b-on-g",
+						"https://github.com/Dev-cmyser",
+						"https://t.me/Dev_cmyser"
+					],
+					"workExample": [
+						{
+							"@type": "WebApplication",
+							"name": "Gram",
+							"description": "Мессенджер без своего сервера: синхронизация между устройствами, правка и удаление сообщений, отметки о прочтении.",
+							"url": "https://b-on-g.github.io/gram/",
+							"applicationCategory": "WebApplication",
+							"operatingSystem": "Any",
+							"sameAs": "https://github.com/b-on-g/gram"
+						},
+						{
+							"@type": "WebApplication",
+							"name": "Blitz Quiz",
+							"description": "Реалтайм-викторина: комната по QR-коду, таймер, лидерборд, админка с генерацией вопросов.",
+							"url": "https://b-on-g.github.io/blitz/",
+							"applicationCategory": "WebApplication",
+							"operatingSystem": "Any",
+							"sameAs": "https://github.com/b-on-g/blitz"
+						},
+						{
+							"@type": "WebApplication",
+							"name": "Bog Music",
+							"description": "Музыкальный плеер: веб-версия и расширение Chrome, фоновое воспроизведение, шеринг треков по ссылке.",
+							"url": "https://b-on-g.github.io/music/",
+							"applicationCategory": "WebApplication",
+							"operatingSystem": "Any",
+							"sameAs": "https://github.com/b-on-g/music"
+						},
+						{
+							"@type": "WebApplication",
+							"name": "Small JS",
+							"description": "Сайт документации веб-фреймворка: гайды на 15 языках, полнотекстовый и семантический поиск, песочница с живым кодом.",
+							"url": "https://b-on-g.github.io/smalljs/",
+							"applicationCategory": "WebApplication",
+							"operatingSystem": "Any",
+							"sameAs": "https://github.com/b-on-g/smalljs"
+						}
+					]
+				},
+				{
+					"@type": "ProfessionalService",
+					"@id": "https://b-on-g.github.io/apps/#business",
+					"name": "ИП Новгородцев Кирилл Александрович",
+					"alternateName": "Кирилл Новгородцев",
+					"url": "https://b-on-g.github.io/apps/",
+					"image": "https://b-on-g.github.io/apps/bog/apps/assets/og.png",
+					"description": "Разработка local-first веб-приложений, которые работают как нативные: офлайн, на всех платформах — Web, Windows, macOS, Linux, Android, iOS и браузерные расширения — из одной кодовой базы, без серверной инфраструктуры. Данные живут на устройствах пользователей и синхронизируются через распределённое хранилище, поэтому не нужны БД, сервер и бэкапы.",
+					"provider": {
+						"@id": "https://b-on-g.github.io/apps/#kirill"
+					},
+					"areaServed": {
+						"@type": "Country",
+						"name": "Россия"
+					},
+					"identifier": [
+						{
+							"@type": "PropertyValue",
+							"name": "ОГРНИП",
+							"value": "325350000056770"
+						},
+						{
+							"@type": "PropertyValue",
+							"name": "ИНН",
+							"value": "351400789430"
+						}
+					],
+					"contactPoint": {
+						"@type": "ContactPoint",
+						"contactType": "sales",
+						"email": "cmyser.fast@mail.ru",
+						"url": "https://t.me/Dev_cmyser",
+						"availableLanguage": "ru"
+					},
+					"hasOfferCatalog": {
+						"@type": "OfferCatalog",
+						"name": "Услуги",
+						"itemListElement": [
+							{
+								"@type": "Offer",
+								"itemOffered": {
+									"@type": "Service",
+									"name": "Разработка веб-приложений (local-first, офлайн-first)"
+								}
+							},
+							{
+								"@type": "Offer",
+								"itemOffered": {
+									"@type": "Service",
+									"name": "PWA: установка на телефон и десктоп без сторов"
+								}
+							},
+							{
+								"@type": "Offer",
+								"itemOffered": {
+									"@type": "Service",
+									"name": "Кроссплатформенные приложения из одной кодовой базы: Web, Windows, macOS, Linux, Android, iOS"
+								}
+							},
+							{
+								"@type": "Offer",
+								"itemOffered": {
+									"@type": "Service",
+									"name": "Браузерные расширения"
+								}
+							},
+							{
+								"@type": "Offer",
+								"itemOffered": {
+									"@type": "Service",
+									"name": "Приложения без серверной инфраструктуры: P2P-синхронизация, end-to-end шифрование"
+								}
+							},
+							{
+								"@type": "Offer",
+								"itemOffered": {
+									"@type": "Service",
+									"name": "Сайты и документационные порталы"
+								}
+							}
+						]
+					}
+				},
+				{
+					"@type": "WebSite",
+					"@id": "https://b-on-g.github.io/apps/#website",
+					"url": "https://b-on-g.github.io/apps/",
+					"name": "Кирилл Новгородцев — веб-приложения",
+					"inLanguage": "ru",
+					"publisher": {
+						"@id": "https://b-on-g.github.io/apps/#business"
+					}
+				}
+			]
+		}
+		</script>
+	<style id="$mol_style_attach:mol/theme/theme.css">:root {
+	--mol_theme_hue: 240deg;
+	--mol_theme_hue_spread: 90deg;
+	color-scheme: dark light;
+}
+
+body, :where([mol_theme]) {
+	color: var(--mol_theme_text);
+	fill: var(--mol_theme_text);
+	background-color: var(--mol_theme_back);
+}
+	
+:root, [mol_theme="$mol_theme_dark"], :where([mol_theme="$mol_theme_dark"]) [mol_theme]  {
+
+	--mol_theme_luma: -1;
+	--mol_theme_image: invert(1) hue-rotate( 180deg );
+	--mol_theme_spirit: hsl( 0deg, 0%, 0%, .75 );
+
+	--mol_theme_back: hsl( var(--mol_theme_hue), 20%, 10% );
+	--mol_theme_card: hsl( var(--mol_theme_hue), 50%, 20%, .25 );
+	--mol_theme_field: hsl( var(--mol_theme_hue), 50%, 8%, .25 );
+	--mol_theme_hover: hsl( var(--mol_theme_hue), 0%, 50%, .1 );
+	
+	--mol_theme_text: hsl( var(--mol_theme_hue), 0%, 80% );
+	--mol_theme_shade: hsl( var(--mol_theme_hue), 0%, 60%, 1 );
+	--mol_theme_line: hsl( var(--mol_theme_hue), 0%, 50%, .25 );
+	--mol_theme_focus: hsl( calc( var(--mol_theme_hue) + 180deg ), 100%, 65% );
+	
+	--mol_theme_control: hsl( var(--mol_theme_hue), 60%, 65% );
+	--mol_theme_current: hsl( calc( var(--mol_theme_hue) - var(--mol_theme_hue_spread) ), 60%, 65% );
+	--mol_theme_special: hsl( calc( var(--mol_theme_hue) + var(--mol_theme_hue_spread) ), 60%, 65% );
+
+} @supports( color: oklch( 0% 0 0deg ) ) {
+:root, [mol_theme="$mol_theme_dark"], :where([mol_theme="$mol_theme_dark"]) [mol_theme]  {
+	
+	--mol_theme_back: oklch( 20% .03 var(--mol_theme_hue) );
+	--mol_theme_card: oklch( 30% .05 var(--mol_theme_hue) / .25 );
+	--mol_theme_field: oklch( 15% 0 var(--mol_theme_hue) / .25 );
+	--mol_theme_hover: oklch( 70% 0 var(--mol_theme_hue) / .1 );
+	
+	--mol_theme_text: oklch( 80% 0 var(--mol_theme_hue) );
+	--mol_theme_shade: oklch( 60% 0 var(--mol_theme_hue) );
+	--mol_theme_line: oklch( 60% 0 var(--mol_theme_hue) / .25 );
+	--mol_theme_focus: oklch( 80% .2 calc( var(--mol_theme_hue) + 180deg ) );
+	
+	--mol_theme_control: oklch( 70% .1 var(--mol_theme_hue) );
+	--mol_theme_current: oklch( 70% .2 calc( var(--mol_theme_hue) - var(--mol_theme_hue_spread) ) );
+	--mol_theme_special: oklch( 70% .2 calc( var(--mol_theme_hue) + var(--mol_theme_hue_spread) ) );
+
+} }
+
+[mol_theme="$mol_theme_light"], :where([mol_theme="$mol_theme_light"]) [mol_theme] {
+	
+	--mol_theme_luma: 1;
+	--mol_theme_image: none;
+	--mol_theme_spirit: hsl( 0deg, 0%, 100%, .75 );
+	
+	--mol_theme_back: hsl( var(--mol_theme_hue), 20%, 92% );
+	--mol_theme_card: hsl( var(--mol_theme_hue), 50%, 100%, .5 );
+	--mol_theme_field: hsl( var(--mol_theme_hue), 50%, 100%, .75 );
+	--mol_theme_hover: hsl( var(--mol_theme_hue), 0%, 50%, .1 );
+	
+	--mol_theme_text: hsl( var(--mol_theme_hue), 0%, 0% );
+	--mol_theme_shade: hsl( var(--mol_theme_hue), 0%, 40%, 1 );
+	--mol_theme_line: hsl( var(--mol_theme_hue), 0%, 50%, .25 );
+	--mol_theme_focus: hsl( calc( var(--mol_theme_hue) + 180deg ), 100%, 40% );
+	
+	--mol_theme_control: hsl( var(--mol_theme_hue), 80%, 30% );
+	--mol_theme_current: hsl( calc( var(--mol_theme_hue) - var(--mol_theme_hue_spread) ), 80%, 30% );
+	--mol_theme_special: hsl( calc( var(--mol_theme_hue) + var(--mol_theme_hue_spread) ), 80%, 30% );
+
+} @supports( color: oklch( 0% 0 0deg ) ) {
+[mol_theme="$mol_theme_light"], :where([mol_theme="$mol_theme_light"]) [mol_theme] {
+	--mol_theme_back: oklch( 92% .01 var(--mol_theme_hue) );
+	--mol_theme_card: oklch( 99% .01 var(--mol_theme_hue) / .5 );
+	--mol_theme_field: oklch( 100% 0 var(--mol_theme_hue) / .5 );
+	--mol_theme_hover: oklch( 50% 0 var(--mol_theme_hue) / .1 );
+	
+	--mol_theme_text: oklch( 20% 0 var(--mol_theme_hue) );
+	--mol_theme_shade: oklch( 60% 0 var(--mol_theme_hue) );
+	--mol_theme_line: oklch( 50% 0 var(--mol_theme_hue) / .25 );
+	--mol_theme_focus: oklch( 60% .2 calc( var(--mol_theme_hue) + 180deg ) );
+	
+	--mol_theme_control: oklch( 40% .15 var(--mol_theme_hue) );
+	--mol_theme_current: oklch( 50% .2 calc( var(--mol_theme_hue) - var(--mol_theme_hue_spread) ) );
+	--mol_theme_special: oklch( 50% .2 calc( var(--mol_theme_hue) + var(--mol_theme_hue_spread) ) );
+
+} }
+
+:where( :root, [mol_theme="$mol_theme_dark"] ) [mol_theme="$mol_theme_base"] {
+	--mol_theme_back: oklch( 25% .075 var(--mol_theme_hue) );
+	--mol_theme_card: oklch( 35% .1 var(--mol_theme_hue) / .25 );
+}
+:where( [mol_theme="$mol_theme_light"] ) [mol_theme="$mol_theme_base"] {
+	--mol_theme_back: oklch( 85% .075 var(--mol_theme_hue) );
+	--mol_theme_card: oklch( 98% .03 var(--mol_theme_hue) / .25 );
+}
+
+:where( :root, [mol_theme="$mol_theme_dark"] ) [mol_theme="$mol_theme_current"] {
+	--mol_theme_back: oklch( 25% .05 calc( var(--mol_theme_hue) - var(--mol_theme_hue_spread) ) );
+	--mol_theme_card: oklch( 35% .1 calc( var(--mol_theme_hue) - var(--mol_theme_hue_spread) ) / .25 );
+}
+:where( [mol_theme="$mol_theme_light"] ) [mol_theme="$mol_theme_current"] {
+	--mol_theme_back: oklch( 85% .05 calc( var(--mol_theme_hue) - var(--mol_theme_hue_spread) ) );
+	--mol_theme_card: oklch( 98% .03 calc( var(--mol_theme_hue) - var(--mol_theme_hue_spread) ) / .25 );
+}
+
+:where( :root, [mol_theme="$mol_theme_dark"] ) [mol_theme="$mol_theme_special"] {
+	--mol_theme_back: oklch( 25% .05 calc( var(--mol_theme_hue) + var(--mol_theme_hue_spread) ) );
+	--mol_theme_card: oklch( 35% .1 calc( var(--mol_theme_hue) + var(--mol_theme_hue_spread) ) / .25 );
+}
+:where( [mol_theme="$mol_theme_light"] ) [mol_theme="$mol_theme_special"] {
+	--mol_theme_back: oklch( 85% .05 calc( var(--mol_theme_hue) + var(--mol_theme_hue_spread) ) );
+	--mol_theme_card: oklch( 98% .03 calc( var(--mol_theme_hue) + var(--mol_theme_hue_spread) ) / .25 );
+}
+
+:where( :root, [mol_theme="$mol_theme_dark"] ) [mol_theme="$mol_theme_accent"] {
+	--mol_theme_back: oklch( 35% .1 calc( var(--mol_theme_hue) + 180deg ) );
+	--mol_theme_card: oklch( 45% .15 calc( var(--mol_theme_hue) + 180deg ) / .25 );
+}
+:where( [mol_theme="$mol_theme_light"] ) [mol_theme="$mol_theme_accent"] {
+	--mol_theme_back: oklch( 83% .1 calc( var(--mol_theme_hue) + 180deg ) );
+	--mol_theme_card: oklch( 98% .03 calc( var(--mol_theme_hue) + 180deg ) / .25 );
+}
+
+</style><style id="$mol_style_attach:mol/gap/gap.css">:root {
+	--mol_gap_page: 3rem;
+	--mol_gap_block: .75rem;
+	--mol_gap_text: .5rem .75rem;
+	--mol_gap_emoji: .5rem;
+	--mol_gap_round: .25rem;
+	--mol_gap_space: .25rem;
+	--mol_gap_blur: .5rem;
+}
+</style><style id="$mol_style_attach:mol/view/view/view.css">@view-transition {
+	navigation: auto;
+}
+
+[mol_view] {
+	transition-property: height, width, min-height, min-width, max-width, max-height, transform, scale, translate, rotate;
+	transition-duration: .2s;
+	transition-timing-function: ease-out;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+	display: flex;
+	flex-shrink: 0;
+	contain: style;
+	scrollbar-color: var(--mol_theme_line) transparent;
+	scrollbar-width: thin;
+	text-wrap-style: pretty;
+	unicode-bidi: plaintext
+}
+
+[mol_view]::selection {
+	background: var(--mol_theme_line);
+}	
+
+[mol_view]::-webkit-scrollbar {
+	width: .25rem;
+	height: .25rem;
+}
+
+[mol_view]::-webkit-scrollbar-corner {
+	background-color: var(--mol_theme_line);
+}
+
+[mol_view]::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+[mol_view]::-webkit-scrollbar-thumb {
+	background-color: var(--mol_theme_line);
+	border-radius: var(--mol_gap_round);
+}
+
+[mol_view] > * {
+	word-break: inherit;
+}
+
+[mol_view_root] {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	font-family: system-ui, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	/* background: var(--mol_theme_back);
+	color: var(--mol_theme_text); */
+	contain: unset; /** Fixes bg ignoring when applied to body on Chrome */
+	tab-size: 4;
+	/*overscroll-behavior: contain; /** Disable navigation gestures **/
+}
+
+@media print {
+	[mol_view_root] {
+		height: auto;
+	}
+}
+[mol_view][mol_view_error]:not([mol_view_error="Promise"], [mol_view_error="$mol_promise_blocker"]) {
+	background-image: repeating-linear-gradient(
+		-45deg,
+		#f92323,
+		#f92323 .5rem,
+		#ff3d3d .5rem,
+		#ff3d3d 1.5rem
+	);
+	color: black;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes mol_view_wait {
+	from {
+		opacity: .25;
+	}
+	20% {
+		opacity: .75;
+	}
+	to {
+		opacity: .25;
+	}
+}
+
+:where([mol_view][mol_view_error="$mol_promise_blocker"]),
+:where([mol_view][mol_view_error="Promise"]) {
+	background: var(--mol_theme_hover);
+}
+
+[mol_view][mol_view_error="Promise"] {
+	animation: mol_view_wait 1s steps(20,end) infinite;
+}
+</style><style id="$mol_style_attach:$bog_builderui_div">[bog_builderui_div] {
+	font-family: var(--bog_builderui_font_body);
+	color: var(--bog_builderui_text);
+	flex-direction: column;
+}
+</style><style id="$mol_style_attach:bog/theme/theme.css">:root {
+	--mol_theme_hue: 645deg;
+	--mol_theme_hue_spread: 90deg;
+	--mol_theme_background: var(--mol_theme_back);
+
+	/* Bog theme semantic aliases */
+	--mol_theme_primary_hue: var(--mol_theme_hue);
+	--mol_theme_secondary_hue: calc(var(--mol_theme_hue) + var(--mol_theme_hue_spread));
+	--mol_theme_tertiary_hue: calc(var(--mol_theme_hue) - var(--mol_theme_hue_spread));
+	--mol_theme_accent_hue: calc(var(--mol_theme_hue) + 180deg);
+}
+
+:where([mol_theme]) {
+	color: var(--mol_theme_text);
+	fill: var(--mol_theme_text);
+	background-color: var(--mol_theme_back);
+}
+
+:root,
+[mol_theme='$mol_theme_dark'],
+:where([mol_theme='$mol_theme_dark']) [mol_theme] {
+	--mol_theme_luma: -1;
+	--mol_theme_image: invert(1) hue-rotate(180deg);
+	--mol_theme_spirit: hsl(0deg, 0%, 0%, 0.75);
+
+	--bog_theme_back: hsl(var(--bog_theme_hue), 8%, 12%);
+	--bog_theme_card: hsl(var(--bog_theme_hue), 15%, 18%, 0.25);
+	--bog_theme_field: hsl(var(--bog_theme_hue), 12%, 10%, 0.25);
+	--bog_theme_hover: hsl(var(--bog_theme_hue), 0%, 50%, 0.1);
+
+	--bog_theme_text: hsl(var(--bog_theme_hue), 8%, 85%);
+	--bog_theme_shade: hsl(var(--bog_theme_hue), 12%, 65%, 1);
+	--bog_theme_line: hsl(var(--bog_theme_hue), 8%, 50%, 0.25);
+	--bog_theme_focus: hsl(calc(var(--bog_theme_hue) + 180deg), 60%, 65%);
+
+	--bog_theme_control: hsl(var(--bog_theme_hue), 25%, 70%);
+	--bog_theme_current: hsl(calc(var(--bog_theme_hue) - var(--bog_theme_hue_spread)), 25%, 70%);
+	--bog_theme_special: hsl(calc(var(--bog_theme_hue) + var(--bog_theme_hue_spread)), 25%, 70%);
+}
+@supports (color: oklch(0% 0 0deg)) {
+	:root,
+	[mol_theme='$mol_theme_dark'],
+	:where([mol_theme='$mol_theme_dark']) [mol_theme] {
+		--bog_theme_back: oklch(12% 0.02 var(--bog_theme_hue));
+		--bog_theme_card: oklch(18% 0.03 var(--bog_theme_hue) / 0.25);
+		--bog_theme_field: oklch(10% 0.015 var(--bog_theme_hue) / 0.25);
+		--bog_theme_hover: oklch(70% 0 var(--bog_theme_hue) / 0.1);
+
+		--bog_theme_text: oklch(85% 0.025 var(--bog_theme_hue));
+		--bog_theme_shade: oklch(65% 0.035 var(--bog_theme_hue));
+		--bog_theme_line: oklch(50% 0.025 var(--bog_theme_hue) / 0.25);
+		--bog_theme_focus: oklch(75% 0.15 calc(var(--bog_theme_hue) + 180deg));
+
+		--bog_theme_control: oklch(70% 0.06 var(--bog_theme_hue));
+		--bog_theme_current: oklch(70% 0.08 calc(var(--bog_theme_hue) - var(--bog_theme_hue_spread)));
+		--bog_theme_special: oklch(70% 0.08 calc(var(--bog_theme_hue) + var(--bog_theme_hue_spread)));
+	}
+}
+
+[mol_theme='$mol_theme_light'],
+:where([mol_theme='$mol_theme_light']) [mol_theme] {
+	--mol_theme_luma: 1;
+	--mol_theme_image: none;
+	--mol_theme_spirit: hsl(0deg, 0%, 100%, 0.75);
+
+	--mol_theme_back: hsl(var(--mol_theme_hue), 0%, 100%);
+	--mol_theme_card: hsl(var(--mol_theme_hue), 50%, 100%, 0.5);
+	--mol_theme_field: hsl(var(--mol_theme_hue), 50%, 100%, 0.75);
+	--mol_theme_hover: hsl(var(--mol_theme_hue), 0%, 50%, 0.1);
+
+	--mol_theme_text: hsl(var(--mol_theme_hue), 0%, 0%);
+	--mol_theme_shade: hsl(var(--mol_theme_hue), 0%, 40%, 1);
+	--mol_theme_line: hsl(var(--mol_theme_hue), 0%, 50%, 0.25);
+	--mol_theme_focus: hsl(calc(var(--mol_theme_hue) + 180deg), 100%, 40%);
+
+	--mol_theme_control: hsl(var(--mol_theme_hue), 80%, 30%);
+	--mol_theme_current: hsl(calc(var(--mol_theme_hue) - var(--mol_theme_hue_spread)), 80%, 30%);
+	--mol_theme_special: hsl(calc(var(--mol_theme_hue) + var(--mol_theme_hue_spread)), 80%, 30%);
+}
+@supports (color: oklch(0% 0 0deg)) {
+	[mol_theme='$mol_theme_light'],
+	:where([mol_theme='$mol_theme_light']) [mol_theme] {
+		--mol_theme_back: oklch(100% 0 var(--mol_theme_hue));
+		--mol_theme_card: oklch(99% 0.01 var(--mol_theme_hue) / 0.5);
+		--mol_theme_field: oklch(100% 0 var(--mol_theme_hue) / 0.5);
+		--mol_theme_hover: oklch(70% 0 var(--mol_theme_hue) / 0.1);
+
+		--mol_theme_text: oklch(20% 0 var(--mol_theme_hue));
+		--mol_theme_shade: oklch(60% 0 var(--mol_theme_hue));
+		--mol_theme_line: oklch(50% 0 var(--mol_theme_hue) / 0.25);
+		--mol_theme_focus: oklch(60% 0.2 calc(var(--mol_theme_hue) + 180deg));
+
+		--mol_theme_control: oklch(40% 0.15 var(--mol_theme_hue));
+		--mol_theme_current: oklch(50% 0.2 calc(var(--mol_theme_hue) - var(--mol_theme_hue_spread)));
+		--mol_theme_special: oklch(50% 0.2 calc(var(--mol_theme_hue) + var(--mol_theme_hue_spread)));
+	}
+}
+
+:where(:root, [mol_theme='$mol_theme_dark']) [mol_theme='$mol_theme_base'] {
+	--mol_theme_back: oklch(25% 0.075 var(--mol_theme_hue));
+	--mol_theme_card: oklch(35% 0.1 var(--mol_theme_hue) / 0.25);
+}
+:where([mol_theme='$mol_theme_light']) [mol_theme='$mol_theme_base'] {
+	--mol_theme_back: oklch(85% 0.075 var(--mol_theme_hue));
+	--mol_theme_card: oklch(98% 0.03 var(--mol_theme_hue) / 0.25);
+}
+
+:where(:root, [mol_theme='$mol_theme_dark']) [mol_theme='$mol_theme_current'] {
+	--mol_theme_back: oklch(25% 0.05 calc(var(--mol_theme_hue) - var(--mol_theme_hue_spread)));
+	--mol_theme_card: oklch(35% 0.1 calc(var(--mol_theme_hue) - var(--mol_theme_hue_spread)) / 0.25);
+}
+:where([mol_theme='$mol_theme_light']) [mol_theme='$mol_theme_current'] {
+	--mol_theme_back: oklch(85% 0.05 calc(var(--mol_theme_hue) - var(--mol_theme_hue_spread)));
+	--mol_theme_card: oklch(98% 0.03 calc(var(--mol_theme_hue) - var(--mol_theme_hue_spread)) / 0.25);
+}
+
+:where(:root, [mol_theme='$mol_theme_dark']) [mol_theme='$mol_theme_special'] {
+	--mol_theme_back: oklch(25% 0.05 calc(var(--mol_theme_hue) + var(--mol_theme_hue_spread)));
+	--mol_theme_card: oklch(35% 0.1 calc(var(--mol_theme_hue) + var(--mol_theme_hue_spread)) / 0.25);
+}
+:where([mol_theme='$mol_theme_light']) [mol_theme='$mol_theme_special'] {
+	--mol_theme_back: oklch(85% 0.05 calc(var(--mol_theme_hue) + var(--mol_theme_hue_spread)));
+	--mol_theme_card: oklch(98% 0.03 calc(var(--mol_theme_hue) + var(--mol_theme_hue_spread)) / 0.25);
+}
+
+:where(:root, [mol_theme='$mol_theme_dark']) [mol_theme='$mol_theme_accent'] {
+	--mol_theme_back: oklch(35% 0.1 calc(var(--mol_theme_hue) + 180deg));
+	--mol_theme_card: oklch(45% 0.15 calc(var(--mol_theme_hue) + 180deg) / 0.25);
+}
+:where([mol_theme='$mol_theme_light']) [mol_theme='$mol_theme_accent'] {
+	--mol_theme_back: oklch(83% 0.1 calc(var(--mol_theme_hue) + 180deg));
+	--mol_theme_card: oklch(98% 0.03 calc(var(--mol_theme_hue) + 180deg) / 0.25);
+}
+
+/* Upwork theme - based on Upwork brand colors */
+[mol_theme='$mol_theme_upwork'],
+:where([mol_theme='$mol_theme_upwork']) [mol_theme] {
+	--mol_theme_luma: 1;
+	--mol_theme_image: none;
+	--mol_theme_spirit: rgba(255, 255, 255, 0.75);
+
+	/* Upwork brand colors: #73bb44 (primary green), #4fab4a (medium green), #385925 (dark green), #b5deb1 (light green) */
+	--mol_theme_back: #ffffff;
+	--mol_theme_card: #f9fcf7;
+	--mol_theme_field: #ffffff;
+	--mol_theme_hover: rgba(115, 187, 68, 0.1);
+
+	--mol_theme_text: #4c4444;
+	--mol_theme_shade: #6e6d7a;
+	--mol_theme_line: rgba(115, 187, 68, 0.25);
+	--mol_theme_focus: #73bb44;
+
+	--mol_theme_control: #73bb44;
+	--mol_theme_current: #4fab4a;
+	--mol_theme_special: #385925;
+}
+
+/* Ainews dark theme - based on Ainews brand palette */
+[mol_theme='$mol_theme_ainews_dark'],
+:where([mol_theme='$mol_theme_ainews_dark']) [mol_theme] {
+	--mol_theme_luma: -1;
+	--mol_theme_image: invert(1) hue-rotate(180deg);
+
+	/* ВАЖНО: mol_* — именно их читает демка */
+	--mol_theme_back: #3e3e3e; /* paper dark */
+	--mol_theme_card: #4a4a4a40; /* paper-2 dark 25% */
+	--mol_theme_field: #4c4c4c40; /* chip dark 25% */
+	--mol_theme_hover: #5a5a5a1a; /* edge dark 10% */
+
+	--mol_theme_text: #bcbcbc; /* ink dark */
+	--mol_theme_shade: #909090; /* ink-muted dark */
+	--mol_theme_line: #5a5a5a40; /* edge dark 25% */
+	--mol_theme_focus: #a8bcff; /* accent dark */
+
+	--mol_theme_control: #a8bcff; /* accent dark */
+	--mol_theme_current: #c7b18c; /* accent-2 dark */
+	--mol_theme_special: #d4bf9d; /* accent-2 lighter */
+}
+
+@supports (color: oklch(0% 0 0deg)) {
+	[mol_theme='$mol_theme_ainews_dark'],
+	:where([mol_theme='$mol_theme_ainews_dark']) [mol_theme] {
+		--mol_theme_back: #3e3e3e;
+		--mol_theme_card: #4a4a4a40;
+		--mol_theme_field: #4c4c4c40;
+		--mol_theme_hover: #5a5a5a1a;
+
+		--mol_theme_text: #bcbcbc;
+		--mol_theme_shade: #909090;
+		--mol_theme_line: #5a5a5a40;
+		--mol_theme_focus: #a8bcff;
+
+		--mol_theme_control: #a8bcff;
+		--mol_theme_current: #c7b18c;
+		--mol_theme_special: #d4bf9d;
+	}
+}
+
+/* Ainews light theme */
+[mol_theme='$mol_theme_ainews_light'],
+:where([mol_theme='$mol_theme_ainews_light']) [mol_theme] {
+	--mol_theme_luma: 1;
+	--mol_theme_image: none;
+	--mol_theme_spirit: #fbf8f1bf; /* 75% */
+
+	--mol_theme_back: #f7f3e9; /* paper */
+	--mol_theme_card: #fbf8f180; /* paper-2 50% */
+	--mol_theme_field: #efe8d8bf; /* chip 75% */
+	--mol_theme_hover: #ded7c81a; /* edge 10% */
+
+	--mol_theme_text: #22211f; /* ink */
+	--mol_theme_shade: #6e6a62; /* ink-muted */
+	--mol_theme_line: #ded7c840; /* edge 25% */
+	--mol_theme_focus: #3b5aad; /* accent */
+
+	--mol_theme_control: #3b5aad; /* accent */
+	--mol_theme_current: #92734b; /* accent-2 */
+	--mol_theme_special: #c7b18c; /* accent-2 lighter */
+}
+
+@supports (color: oklch(0% 0 0deg)) {
+	[mol_theme='$mol_theme_ainews_light'],
+	:where([mol_theme='$mol_theme_ainews_light']) [mol_theme] {
+		--mol_theme_back: #f7f3e9;
+		--mol_theme_card: #fbf8f180;
+		--mol_theme_field: #efe8d8bf;
+		--mol_theme_hover: #ded7c81a;
+
+		--mol_theme_text: #22211f;
+		--mol_theme_shade: #6e6a62;
+		--mol_theme_line: #ded7c840;
+		--mol_theme_focus: #3b5aad;
+
+		--mol_theme_control: #3b5aad;
+		--mol_theme_current: #92734b;
+		--mol_theme_special: #c7b18c;
+	}
+}
+
+/* HomeRent dark theme */
+[mol_theme='$mol_theme_homerent_dark'],
+:where([mol_theme='$mol_theme_homerent_dark']) [mol_theme] {
+	--mol_theme_luma: -1;
+	--mol_theme_image: invert(1) hue-rotate(180deg);
+	--mol_theme_spirit: rgba(0, 0, 0, 0.6);
+
+	--mol_theme_back: #2f2f2f;
+	--mol_theme_background: #f5f5f5;
+	--mol_theme_card: #3a3a3a;
+	--mol_theme_field: #3a3a3a;
+	--mol_theme_hover: rgba(255, 255, 255, 0.06);
+
+	--mol_theme_text: #f5f5f5;
+	--mol_theme_shade: #c7c7c7;
+	--mol_theme_line: #ffffff26;
+	--mol_theme_focus: #8fc32b;
+
+	--mol_theme_control: #dbe05b;
+	--mol_theme_current: #8fc32b;
+	--mol_theme_special: #8fc32b;
+}
+
+@supports (color: oklch(0% 0 0deg)) {
+	[mol_theme='$mol_theme_homerent_dark'],
+	:where([mol_theme='$mol_theme_homerent_dark']) [mol_theme] {
+		--mol_theme_back: #2f2f2f;
+		--mol_theme_background: #f5f5f5;
+		--mol_theme_card: #3a3a3a;
+		--mol_theme_field: #3a3a3a;
+		--mol_theme_hover: rgba(255, 255, 255, 0.06);
+
+		--mol_theme_text: #f5f5f5;
+		--mol_theme_shade: #c7c7c7;
+		--mol_theme_line: #ffffff26;
+		--mol_theme_focus: #8fc32b;
+
+		--mol_theme_control: #dbe05b;
+		--mol_theme_current: #8fc32b;
+		--mol_theme_special: #8fc32b;
+	}
+}
+
+/* HomeRent light theme */
+[mol_theme='$mol_theme_homerent_light'],
+:where([mol_theme='$mol_theme_homerent_light']) [mol_theme] {
+	--mol_theme_luma: 1;
+	--mol_theme_image: none;
+	--mol_theme_spirit: rgba(245, 245, 245, 0.75);
+
+	--mol_theme_back: #ffffff;
+	--mol_theme_background: #f5f5f5;
+	--mol_theme_card: #ffffff;
+	--mol_theme_field: #ffffff;
+	--mol_theme_hover: #8fc32b1a;
+
+	--mol_theme_text: #4c4c4c;
+	--mol_theme_shade: #707070;
+	--mol_theme_line: #4c4c4c26;
+	--mol_theme_focus: #8fc32b;
+
+	--mol_theme_control: #dbe05b;
+	--mol_theme_current: #8fc32b;
+	--mol_theme_special: #8fc32b;
+}
+
+@supports (color: oklch(0% 0 0deg)) {
+	[mol_theme='$mol_theme_homerent_light'],
+	:where([mol_theme='$mol_theme_homerent_light']) [mol_theme] {
+		--mol_theme_back: #ffffff;
+		--mol_theme_background: #f5f5f5;
+		--mol_theme_card: #ffffff;
+		--mol_theme_field: #ffffff;
+		--mol_theme_hover: #8fc32b1a;
+
+		--mol_theme_text: #4c4c4c;
+		--mol_theme_shade: #707070;
+		--mol_theme_line: #4c4c4c26;
+		--mol_theme_focus: #8fc32b;
+
+		--mol_theme_control: #dbe05b;
+		--mol_theme_current: #8fc32b;
+		--mol_theme_special: #8fc32b;
+	}
+}
+
+/* Giper Smash dark theme - original game palette */
+[mol_theme='$mol_theme_giper_smash_dark'],
+:where([mol_theme='$mol_theme_giper_smash_dark']) [mol_theme] {
+	--mol_theme_luma: -1;
+	--mol_theme_image: invert(1) hue-rotate(180deg);
+	--mol_theme_spirit: rgba(0, 0, 0, 0.85);
+
+	--mol_theme_back: #1a1a2e;
+	--mol_theme_card: #2d2d44;
+	--mol_theme_field: #16213e;
+	--mol_theme_hover: rgba(118, 75, 162, 0.15);
+
+	--mol_theme_text: #ffffff;
+	--mol_theme_shade: #b0b0cc;
+	--mol_theme_line: rgba(255, 255, 255, 0.12);
+	--mol_theme_focus: #f5b041;
+
+	--mol_theme_control: #44a08d;
+	--mol_theme_current: #0088cc;
+	--mol_theme_special: #764ba2;
+}
+
+/* Giper Smash light theme - bright game palette */
+[mol_theme='$mol_theme_giper_smash_light'],
+:where([mol_theme='$mol_theme_giper_smash_light']) [mol_theme] {
+	--mol_theme_luma: 1;
+	--mol_theme_image: none;
+	--mol_theme_spirit: rgba(255, 255, 255, 0.85);
+
+	--mol_theme_back: #f0eef5;
+	--mol_theme_card: #ffffff;
+	--mol_theme_field: #e8e5f0;
+	--mol_theme_hover: rgba(118, 75, 162, 0.08);
+
+	--mol_theme_text: #1a1a2e;
+	--mol_theme_shade: #5c5c7a;
+	--mol_theme_line: rgba(26, 26, 46, 0.12);
+	--mol_theme_focus: #d4941a;
+
+	--mol_theme_control: #2e8b73;
+	--mol_theme_current: #0077b3;
+	--mol_theme_special: #6a3d99;
+}
+
+/* Monefro dark theme - inspired by Monefy */
+[mol_theme='$mol_theme_monefro_dark'],
+:where([mol_theme='$mol_theme_monefro_dark']) [mol_theme] {
+	--mol_theme_luma: -1;
+	--mol_theme_image: invert(1) hue-rotate(180deg);
+	--mol_theme_spirit: rgba(0, 0, 0, 0.6);
+
+	--mol_theme_back: #24201c;
+	--mol_theme_card: #2c2722;
+	--mol_theme_field: #29241f;
+	--mol_theme_hover: rgba(255, 255, 255, 0.04);
+
+	--mol_theme_text: #f0e7dc;
+	--mol_theme_shade: #b5a99c;
+	--mol_theme_line: rgba(255, 255, 255, 0.12);
+	--mol_theme_focus: #56c78a;
+
+	--mol_theme_control: #56c78a;
+	--mol_theme_current: #f2776e;
+	--mol_theme_special: #f6b04a;
+}
+
+@supports (color: oklch(0% 0 0deg)) {
+	[mol_theme='$mol_theme_monefro_dark'],
+	:where([mol_theme='$mol_theme_monefro_dark']) [mol_theme] {
+		--mol_theme_back: #24201c;
+		--mol_theme_card: #2c2722;
+		--mol_theme_field: #29241f;
+		--mol_theme_hover: rgba(255, 255, 255, 0.04);
+
+		--mol_theme_text: #f0e7dc;
+		--mol_theme_shade: #b5a99c;
+		--mol_theme_line: rgba(255, 255, 255, 0.12);
+		--mol_theme_focus: #56c78a;
+
+		--mol_theme_control: #56c78a;
+		--mol_theme_current: #f2776e;
+		--mol_theme_special: #f6b04a;
+	}
+}
+
+/* Monefro light theme - inspired by Monefy */
+[mol_theme='$mol_theme_monefro_light'],
+:where([mol_theme='$mol_theme_monefro_light']) [mol_theme] {
+	--mol_theme_luma: 1;
+	--mol_theme_image: none;
+	--mol_theme_spirit: rgba(255, 255, 255, 0.75);
+
+	--mol_theme_back: #f6f2ea;
+	--mol_theme_card: #ffffff;
+	--mol_theme_field: #fff8ef;
+	--mol_theme_hover: rgba(0, 0, 0, 0.04);
+
+	--mol_theme_text: #3f3b36;
+	--mol_theme_shade: #8b8278;
+	--mol_theme_line: rgba(64, 55, 46, 0.15);
+	--mol_theme_focus: #2f9a6a;
+
+	--mol_theme_control: #2f9a6a;
+	--mol_theme_current: #e85b54;
+	--mol_theme_special: #f3a43b;
+}
+
+@supports (color: oklch(0% 0 0deg)) {
+	[mol_theme='$mol_theme_monefro_light'],
+	:where([mol_theme='$mol_theme_monefro_light']) [mol_theme] {
+		--mol_theme_back: #f6f2ea;
+		--mol_theme_card: #ffffff;
+		--mol_theme_field: #fff8ef;
+		--mol_theme_hover: rgba(0, 0, 0, 0.04);
+
+		--mol_theme_text: #3f3b36;
+		--mol_theme_shade: #8b8278;
+		--mol_theme_line: rgba(64, 55, 46, 0.15);
+		--mol_theme_focus: #2f9a6a;
+
+		--mol_theme_control: #2f9a6a;
+		--mol_theme_current: #e85b54;
+		--mol_theme_special: #f3a43b;
+	}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Calm theme — universal working theme (draft for review)
+   Base hue: 230° (blue-gray), spread: 90°
+   Style: quiet, professional, no noise
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Calm dark theme */
+[mol_theme='$mol_theme_calm_dark'],
+:where([mol_theme='$mol_theme_calm_dark']) [mol_theme] {
+	--mol_theme_luma: -1;
+	--mol_theme_image: invert(1) hue-rotate(180deg);
+	--mol_theme_spirit: #000000bf;
+	--mol_theme_hue: 230deg;
+	--mol_theme_hue_spread: 90deg;
+
+	--mol_theme_back: #0d1117;
+	--mol_theme_card: #161b2240;
+	--mol_theme_field: #0a0e1440;
+	--mol_theme_hover: #ffffff0c;
+
+	--mol_theme_text: #e6edf3;
+	--mol_theme_shade: #8b949e;
+	--mol_theme_line: #30363d;
+	--mol_theme_focus: #d29922;
+
+	--mol_theme_control: #2f81f7;
+	--mol_theme_current: #3fb950;
+	--mol_theme_special: #a371f7;
+}
+
+/* Calm light theme */
+[mol_theme='$mol_theme_calm_light'],
+:where([mol_theme='$mol_theme_calm_light']) [mol_theme] {
+	--mol_theme_luma: 1;
+	--mol_theme_image: none;
+	--mol_theme_spirit: #f7f8fabf;
+	--mol_theme_hue: 230deg;
+	--mol_theme_hue_spread: 90deg;
+
+	--mol_theme_back: #f7f8fa;
+	--mol_theme_card: #ffffff80;
+	--mol_theme_field: #e8eaf0bf;
+	--mol_theme_hover: #0000000a;
+
+	--mol_theme_text: #1a1c23;
+	--mol_theme_shade: #656a80;
+	--mol_theme_line: #3a3e5026;
+	--mol_theme_focus: #b87518;
+
+	--mol_theme_control: #3560b8;
+	--mol_theme_current: #28856e;
+	--mol_theme_special: #8a4aad;
+}
+
+/* Calm dark sub-themes */
+:where([mol_theme='$mol_theme_calm_dark']) [mol_theme='$mol_theme_base'] {
+	--mol_theme_back: #1a2840;
+	--mol_theme_card: #243450;
+}
+:where([mol_theme='$mol_theme_calm_dark']) [mol_theme='$mol_theme_current'] {
+	--mol_theme_back: #143028;
+	--mol_theme_card: #1c3e3450;
+}
+:where([mol_theme='$mol_theme_calm_dark']) [mol_theme='$mol_theme_special'] {
+	--mol_theme_back: #2a1c48;
+	--mol_theme_card: #3a2a5c50;
+}
+:where([mol_theme='$mol_theme_calm_dark']) [mol_theme='$mol_theme_accent'] {
+	--mol_theme_back: #3a1c2a;
+	--mol_theme_card: #4c283a50;
+}
+
+:where([mol_theme='$mol_theme_calm_light']) [mol_theme='$mol_theme_base'] {
+	--mol_theme_back: oklch(85% 0.075 var(--mol_theme_hue));
+	--mol_theme_card: oklch(98% 0.03 var(--mol_theme_hue) / 0.25);
+}
+:where([mol_theme='$mol_theme_calm_light']) [mol_theme='$mol_theme_current'] {
+	--mol_theme_back: oklch(85% 0.05 calc(var(--mol_theme_hue) - var(--mol_theme_hue_spread)));
+	--mol_theme_card: oklch(98% 0.03 calc(var(--mol_theme_hue) - var(--mol_theme_hue_spread)) / 0.25);
+}
+:where([mol_theme='$mol_theme_calm_light']) [mol_theme='$mol_theme_special'] {
+	--mol_theme_back: oklch(85% 0.05 calc(var(--mol_theme_hue) + var(--mol_theme_hue_spread)));
+	--mol_theme_card: oklch(98% 0.03 calc(var(--mol_theme_hue) + var(--mol_theme_hue_spread)) / 0.25);
+}
+:where([mol_theme='$mol_theme_calm_light']) [mol_theme='$mol_theme_accent'] {
+	--mol_theme_back: oklch(83% 0.1 calc(var(--mol_theme_hue) + 180deg));
+	--mol_theme_card: oklch(98% 0.03 calc(var(--mol_theme_hue) + 180deg) / 0.25);
+}
+</style><style id="$mol_style_attach:bog/theme/auto/auto.view.css">.bog_theme_switching,
+.bog_theme_switching * {
+	transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease, fill 300ms ease !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.bog_theme_switching,
+	.bog_theme_switching * {
+		transition: none !important;
+	}
+}
+</style><style id="$mol_style_attach:mol/svg/root/root.view.css">[mol_svg_root] {
+	overflow: hidden;
+}
+</style><style id="$mol_style_attach:mol/icon/icon.view.css">[mol_icon] {
+	fill: currentColor;
+	stroke: none;
+	width: 1em;
+	height: 1.5em;
+	flex: 0 0 auto;
+	vertical-align: top;
+	display: inline-block;
+	filter: drop-shadow(0px 1px 1px var(--mol_theme_back));
+	transform-origin: center;
+}
+
+[mol_icon_path] {
+	transform-origin: center;
+}
+</style><style id="$mol_style_attach:$mol_link">[mol_link] {
+	text-decoration: none;
+	color: var(--mol_theme_control);
+	stroke: currentcolor;
+	cursor: pointer;
+	padding: var(--mol_gap_text);
+	box-sizing: border-box;
+	position: relative;
+	min-width: 2.5rem;
+	min-height: 2.5rem;
+	gap: var(--mol_gap_space);
+	border-radius: var(--mol_gap_round);
+}
+[mol_link]:hover {
+	background-color: var(--mol_theme_hover);
+}
+[mol_link]:focus {
+	outline: none;
+}
+[mol_link]:focus-visible {
+	outline: none;
+	background-color: var(--mol_theme_hover);
+}
+[mol_link]:active {
+	color: var(--mol_theme_focus);
+}
+[mol_link]:where([mol_link_current="true"]) {
+	color: var(--mol_theme_current);
+	text-shadow: 0 0;
+}
+</style><style id="$mol_style_attach:mol/follower/follower.view.css">[mol_follower] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: none;
+}
+</style><style id="$mol_style_attach:mol/layer/layer.css">:root {
+	--mol_layer_hover: 1;
+	--mol_layer_focus: 2;
+	--mol_layer_speck: 3;
+	--mol_layer_float: 4;
+	--mol_layer_popup: 5;
+}
+</style><style id="$mol_style_attach:$mol_scroll">[mol_scroll] {
+	display: grid;
+	overflow: auto;
+	flex-direction: column;
+	flex-grow: 1;
+	flex-shrink: 1;
+	outline: none;
+	align-self: stretch;
+	align-items: flex-start;
+	box-sizing: border-box;
+	will-change: scroll-position;
+	scroll-padding: 0.75rem 0;
+	max-height: 100%;
+	max-width: 100%;
+	webkit-overflow-scrolling: touch;
+	contain: content;
+}
+[mol_scroll] > :where([mol_view]) {
+	grid-area: 1/1;
+}
+[mol_scroll]::before {
+	display: none;
+}
+[mol_scroll]::after {
+	display: none;
+}
+[mol_scroll]::-webkit-scrollbar {
+	width: 0.25rem;
+	height: 0.25rem;
+}
+@media print {
+[mol_scroll] {
+	overflow: hidden;
+	contain: none;
+	max-height: unset;
+}
+}
+</style><style id="$mol_style_attach:mol/pop/pop.view.css">@keyframes mol_pop_show {
+	from {
+		opacity: 0;
+	}
+}
+
+[mol_pop] {
+	position: relative;
+	display: inline-flex;
+}
+
+[mol_pop_bubble] {
+	border: none;
+	padding: 0;
+	color: var(--mol_theme_text);
+	box-shadow: 0 0 1rem hsla(0,0%,0%,.5);
+	border-radius: var(--mol_gap_round);
+	position: fixed;
+	z-index: var(--mol_layer_popup);
+	background: var(--mol_theme_back);
+	max-width: none;
+	max-height: none;
+	/* overflow: hidden;
+	overflow-y: scroll;
+	overflow-y: overlay; */
+	word-break: normal;
+	width: max-content;
+	/* height: max-content; */
+	flex-direction: column;
+	max-width: calc( 100vw - var(--mol_gap_page) );
+	max-height: 80vw;
+	contain: paint;
+	transition-property: opacity;
+	/* Safari ios layer fix, https://t.me/mam_mol/170017 */
+	transform: translateZ(0);
+	animation: mol_pop_show .1s ease-in;
+}
+
+:where( [mol_pop_bubble] > * ) {
+	background: var(--mol_theme_card);
+}
+
+[mol_pop_bubble][mol_scroll] {
+	background: var(--mol_theme_back);
+}
+
+[mol_pop_bubble]:focus {
+	outline: none;
+}
+</style><style id="$mol_style_attach:mol/string/string.view.css">[mol_string] {
+	box-sizing: border-box;
+	outline-offset: 0;
+	border: none;
+	border-radius: var(--mol_gap_round);
+	white-space: pre-line;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: var(--mol_gap_text);
+	text-align: start;
+	position: relative;
+	font: inherit;
+	flex: 1 1 auto;
+	background: transparent;
+	min-width: 0;
+	color: inherit;
+	background: var(--mol_theme_field);
+}
+
+[mol_string]:disabled:not(:placeholder-shown) {
+	background-color: transparent;
+	color: var(--mol_theme_text);
+}
+
+[mol_string]:where(:not(:disabled)) {
+	box-shadow: inset 0 0 0 1px var(--mol_theme_line);
+}
+
+[mol_string]:where(:not(:disabled)):hover {
+	box-shadow: inset 0 0 0 2px var(--mol_theme_line);
+	z-index: var(--mol_layer_hover);
+}
+
+[mol_string]:focus {
+	outline: none;
+	z-index: var(--mol_layer_focus);
+	color: var(--mol_theme_text);
+	box-shadow: inset 0 0 0 1px var(--mol_theme_focus);
+}
+
+[mol_string]::placeholder {
+	color: var(--mol_theme_shade);
+}
+
+[mol_string]::-ms-clear {
+	display: none;
+}
+</style><style id="$mol_style_attach:mol/list/list.view.css">[mol_list] {
+	will-change: contents;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	max-width: 100%;
+	/* display: flex;
+	align-items: stretch;
+	align-content: stretch; */
+	transition: none;
+	/* will-change: contents; */
+}
+
+[mol_list]:where([mol_view_error]) {
+	min-height: 1.5rem;
+}
+
+[mol_list_gap_before] ,
+[mol_list_gap_after] {
+	display: block !important;
+	flex: none;
+	transition: none;
+	overflow-anchor: none;
+}
+</style><style id="$mol_style_attach:mol/speck/speck.view.css">[mol_speck] {
+	font-size: .75rem;
+	border-radius: 1rem;
+	margin: -0.5rem -0.2rem;
+	align-self: flex-start;
+	min-height: 1em;
+	min-width: .75rem;
+	vertical-align: sub;
+	padding: 0 .2rem;
+	position: absolute;
+	z-index: var(--mol_layer_speck);
+	text-align: center;
+	line-height: .9;
+	display: inline-block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	user-select: none;
+	box-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+</style><style id="$mol_style_attach:mol/button/button.view.css">[mol_button] {
+	border: none;
+	font: inherit;
+	display: inline-flex;
+	flex-shrink: 0;
+	text-decoration: inherit;
+	cursor: inherit;
+	position: relative;
+	box-sizing: border-box;
+	word-break: normal;
+	cursor: default;
+	user-select: none;
+	-webkit-user-select: none;
+	border-radius: var(--mol_gap_round);
+	background: transparent;
+	color: inherit;
+}
+
+[mol_button]:where(:not(:disabled)):hover {
+	z-index: var(--mol_layer_hover);
+}
+
+[mol_button]:focus {
+	outline: none;
+	z-index: var(--mol_layer_focus);
+}
+</style><style id="$mol_style_attach:mol/button/typed/typed.view.css">[mol_button_typed] {
+	align-content: center;
+	align-items: center;
+	padding: var(--mol_gap_text);
+	border-radius: var(--mol_gap_round);
+	gap: var(--mol_gap_space);
+	user-select: none;
+	cursor: pointer;
+	min-width: 2.5rem;
+	min-height: 2.5rem;
+}
+
+[mol_button_typed][disabled] {
+	pointer-events: none;
+}
+
+[mol_button_typed]:hover ,
+[mol_button_typed]:focus-visible {
+	box-shadow: inset 0 0 0 100vmax var(--mol_theme_hover);
+}
+
+[mol_button_typed]:active {
+	color: var(--mol_theme_focus);
+}
+</style><style id="$mol_style_attach:mol/button/minor/minor.view.css">[mol_button_minor]:where(:not([disabled])) {
+	color: var(--mol_theme_control);
+}
+</style><style id="$mol_style_attach:$bog_theme_picker_row">[bog_theme_picker_row]:where([bog_theme_picker_row_focused="true"]) {
+	background-color: var(--mol_theme_hover);
+	box-shadow: inset 0 0 0 1px #000, inset 0 0 0 2px #fff;
+}
+</style><style id="$mol_style_attach:$bog_theme_picker">[bog_theme_picker] {
+	background-color: var(--mol_theme_back);
+	border-radius: 8px;
+	overflow: hidden;
+	opacity: 1;
+}
+[bog_theme_picker_search] {
+	border-radius: 8px;
+}
+</style><style id="$mol_style_attach:$bog_theme_toggle">[bog_theme_toggle_bubble] {
+	position: fixed !important;
+	left: 0 !important;
+	top: 0 !important;
+	transform: none !important;
+	width: 100vw !important;
+	height: 100vh !important;
+	max-width: none !important;
+	max-height: none !important;
+	padding: 0 !important;
+	box-shadow: none;
+	background: transparent !important;
+}
+[bog_theme_toggle_backdrop] {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	opacity: 0;
+}
+[bog_theme_toggle_picker] {
+	position: fixed;
+	left: 50%;
+	top: 15vh;
+	transform: translateX(-50%);
+	max-width: 400px;
+	width: 90vw;
+	max-height: 70vh;
+	z-index: 2;
+}
+</style><style id="$mol_style_attach:$bog_builderui_card">[bog_builderui_card] {
+	background-color: var(--bog_builderui_card);
+	color: var(--bog_builderui_text);
+	border-radius: var(--bog_builderui_radius);
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--bog_builderui_line);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	box-shadow: 0 1px 3px 0 #0000001a;
+	gap: 0.75rem;
+	flex-direction: column;
+	break-inside: avoid;
+	margin-bottom: 1rem;
+}
+</style><style id="$mol_style_attach:$bog_builderui_field">[bog_builderui_field] {
+	font-family: var(--bog_builderui_font_body);
+	color: var(--bog_builderui_text);
+	background-color: var(--bog_builderui_field);
+	border-radius: var(--bog_builderui_radius);
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--bog_builderui_line);
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	flex-grow: 0;
+	flex-shrink: 1;
+	align-self: stretch;
+	min-width: 0;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+</style><style id="$mol_style_attach:mol/gallery/gallery.view.css">[mol_gallery] {
+	flex-wrap: wrap;
+	flex: 1 1 auto;
+	align-items: stretch;
+    align-content: stretch;
+}
+</style><style id="$mol_style_attach:mol/plot/graph/graph.view.css">[mol_plot_graph] {
+	stroke: currentColor;
+}
+
+[mol_plot_graph_sample] {
+	border-width: 0;
+	border-style: solid;
+}
+
+[mol_plot_graph_type="dashed"] {
+	stroke-dasharray: 4 4;
+	border-style: dashed;
+}
+</style><style id="$mol_style_attach:mol/chart/legend/legend.view.css">[mol_chart_legend] {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	flex: 0 1 auto;
+}
+
+[mol_chart_legend_graph_legend] {
+	display: flex;
+	justify-content: flex-start;
+	flex: 1 1 8rem;
+	padding: .5rem;
+}
+
+[mol_chart_legend_graph_title] {
+	margin: 0 .25rem;
+	flex: 1 1 auto;
+}
+
+[mol_chart_legend_graph_sample_box] {
+	position: relative;
+	width: 1.5rem;
+	flex: none;
+}
+</style><style id="$mol_style_attach:mol/plot/pane/pane.view.css">[mol_plot_pane] {
+	color: var(--mol_theme_control);
+	flex: 1 1 auto;
+	align-self: stretch;
+	stroke-width: 2px;
+	user-select: none;
+}
+</style><style id="$mol_style_attach:mol/chart/chart.view.css">[mol_chart] {
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	flex: 1 1 auto;
+	min-height: 0;
+}
+
+[mol_chart_plot] {
+	flex: 1 0 50%;
+	margin: .5rem;
+}
+</style><style id="$mol_style_attach:$bog_builderui_chart">[bog_builderui_chart] {
+	font-family: var(--bog_builderui_font_body);
+	color: var(--bog_builderui_text);
+}
+</style><style id="$mol_style_attach:mol/check/check.css">[mol_check] {
+	flex: 0 0 auto;
+	justify-content: flex-start;
+	align-content: center;
+	/* align-items: flex-start; */
+	border: none;
+	font-weight: inherit;
+	box-shadow: none;
+	text-align: start;
+	display: inline-flex;
+	flex-wrap: nowrap;
+}
+
+[mol_check_title] {
+	flex-shrink: 1;
+}
+</style><style id="$mol_style_attach:mol/pick/pick.view.css">[mol_pick_trigger] {
+	align-items: center;
+	flex-grow: 1;
+}
+</style><style id="$mol_style_attach:mol/paragraph/paragraph.view.css">:where([mol_paragraph]) {
+	margin: 0;
+	max-width: 100%;
+}
+</style><style id="$mol_style_attach:mol/dimmer/dimmer.view.css">[mol_dimmer] {
+	display: block;
+	max-width: 100%;
+}
+
+[mol_dimmer_low] {
+	display: inline;
+	opacity: 0.8;
+}
+
+[mol_dimmer_high] {
+	display: inline;
+	color: var(--mol_theme_focus);
+	text-shadow: 0 0;
+}
+</style><style id="$mol_style_attach:mol/search/search.view.css">[mol_search] {
+	align-self: flex-start;
+	flex: auto;
+}
+
+[mol_search_anchor] {
+	flex: 1 1 auto;
+}
+
+[mol_search_query] {
+	flex-grow: 1;
+}
+
+[mol_search_menu] {
+	min-height: .75rem;
+	display: flex;
+}
+
+[mol_search_suggest] {
+	text-align: start;
+}
+
+[mol_search_suggest_label_high] {
+	color: var(--mol_theme_shade);
+	text-shadow: none;
+}
+</style><style id="$mol_style_attach:mol/select/select.view.css">[mol_select] {
+	display: flex;
+	word-break: normal;
+	align-self: flex-start;
+}
+
+[mol_select_option_row] {
+	min-width: 100%;
+	padding: 0;
+	justify-content: flex-start;
+}
+
+[mol_select_filter] {
+	flex: 1 0 auto;
+	align-self: stretch;
+}
+
+[mol_select_option_label] {
+	padding: var(--mol_gap_text);
+	text-align: start;
+	min-height: 1.5em;
+	display: block;
+	white-space: nowrap;
+}
+
+[mol_select_clear_option_content] {
+	padding: .5em 1rem .5rem 0;
+	text-align: start;
+	box-shadow: var(--mol_theme_line);
+	flex: 1 0 auto;
+}
+
+[mol_select_no_options] {
+	padding: var(--mol_gap_text);
+	text-align: start;
+	display: block;
+	color: var(--mol_theme_shade);
+}
+
+[mol_select_trigger] {
+	padding: 0;
+	flex: 1 1 auto;
+	display: flex;
+}
+
+[mol_select_trigger] > * {
+	margin-inline-end: -1rem;
+}
+
+[mol_select_trigger] > *:last-child {
+	margin-inline-end: 0;
+}
+
+[mol_select_menu] {
+	display: flex;
+	flex-direction: column;
+}
+
+</style><style id="$mol_style_attach:$bog_builderui_select">[bog_builderui_select] {
+	font-family: var(--bog_builderui_font_body);
+	color: var(--bog_builderui_text);
+	background-color: var(--bog_builderui_field);
+	border-radius: var(--bog_builderui_radius);
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--bog_builderui_line);
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	cursor: pointer;
+	transition: background-color 120ms, border-color 120ms;
+}
+[bog_builderui_select]:hover {
+	background-color: var(--bog_builderui_hover);
+	border-color: var(--bog_builderui_focus);
+}
+[bog_builderui_select] :where([mol_check]) {
+	background-color: transparent;
+	box-shadow: none;
+	outline: none;
+	color: inherit;
+}
+[bog_builderui_select] :where([mol_check]):hover {
+	background-color: transparent;
+	box-shadow: none;
+}
+[bog_builderui_select] :where([mol_check]):focus {
+	background-color: transparent;
+	box-shadow: none;
+	outline: none;
+}
+[bog_builderui_select] :where([mol_check]):focus-visible {
+	background-color: transparent;
+	box-shadow: none;
+	outline: none;
+}
+[bog_builderui_select] :where([mol_pop_bubble]) {
+	background-color: var(--bog_builderui_card);
+	color: var(--bog_builderui_text);
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--bog_builderui_line);
+	border-radius: var(--bog_builderui_radius);
+	padding-top: 0.25rem;
+	padding-right: 0.25rem;
+	padding-bottom: 0.25rem;
+	padding-left: 0.25rem;
+	box-shadow: 0 4px 12px 0 #00000026;
+	overflow: hidden;
+}
+[bog_builderui_select] :where([mol_pop_bubble]) :where([mol_scroll]) {
+	background-color: transparent;
+	border-radius: var(--bog_builderui_radius);
+}
+[bog_builderui_select] :where([mol_pop_bubble]) :where([mol_button_minor]) {
+	border-radius: var(--bog_builderui_radius);
+	color: var(--bog_builderui_text);
+	background-color: transparent;
+	box-shadow: none;
+}
+[bog_builderui_select] :where([mol_pop_bubble]) :where([mol_button_minor]):hover {
+	background-color: var(--bog_builderui_hover);
+	box-shadow: none;
+}
+[bog_builderui_select] :where([mol_pop_bubble]) :where([mol_button_minor]):focus {
+	background-color: transparent;
+	box-shadow: none;
+}
+[bog_builderui_select] :where([mol_pop_bubble]) :where([mol_button_minor]):focus-visible {
+	background-color: transparent;
+	box-shadow: none;
+}
+</style><style id="$mol_style_attach:mol/pop/over/over.view.css">[mol_pop_over]:focus {
+	outline: none;
+}</style><style id="$mol_style_attach:bog/builderui/theme.css">@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=EB+Garamond:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+	--bog_builderui_font_body: 'Inter', system-ui, sans-serif;
+	--bog_builderui_font_head: 'Inter', system-ui, sans-serif;
+	--bog_builderui_radius: 0.5rem;
+}
+
+/* ============================================================
+   RADIUS PRESETS
+   ============================================================ */
+[bog_builderui_radius="none"] { --bog_builderui_radius: 0; }
+[bog_builderui_radius="small"] { --bog_builderui_radius: 0.25rem; }
+[bog_builderui_radius="medium"] { --bog_builderui_radius: 0.5rem; }
+[bog_builderui_radius="large"] { --bog_builderui_radius: 1rem; }
+
+/* ============================================================
+   BODY FONT
+   ============================================================ */
+[bog_builderui_font_body="inter"] { --bog_builderui_font_body: 'Inter', system-ui, sans-serif; }
+[bog_builderui_font_body="manrope"] { --bog_builderui_font_body: 'Manrope', system-ui, sans-serif; }
+[bog_builderui_font_body="dm-sans"] { --bog_builderui_font_body: 'DM Sans', system-ui, sans-serif; }
+[bog_builderui_font_body="eb-garamond"] { --bog_builderui_font_body: 'EB Garamond', Georgia, serif; }
+
+/* ============================================================
+   HEADING FONT
+   ============================================================ */
+[bog_builderui_font_head="inter"] { --bog_builderui_font_head: 'Inter', system-ui, sans-serif; }
+[bog_builderui_font_head="manrope"] { --bog_builderui_font_head: 'Manrope', system-ui, sans-serif; }
+[bog_builderui_font_head="dm-sans"] { --bog_builderui_font_head: 'DM Sans', system-ui, sans-serif; }
+[bog_builderui_font_head="eb-garamond"] { --bog_builderui_font_head: 'EB Garamond', Georgia, serif; }
+
+/* ============================================================
+   BASE COLORS (neutral palette)
+   Vars: back, card, field, text, shade, line, hover
+   ============================================================ */
+
+/* === Slate (default) === */
+:root,
+[bog_builderui_base="slate"][bog_builderui_lights="dark"] {
+	--bog_builderui_back: #020817;
+	--bog_builderui_card: #0f172a;
+	--bog_builderui_field: #1e293b;
+	--bog_builderui_text: #f8fafc;
+	--bog_builderui_shade: #94a3b8;
+	--bog_builderui_line: #1e293b;
+	--bog_builderui_hover: #ffffff0d;
+}
+[bog_builderui_base="slate"][bog_builderui_lights="light"] {
+	--bog_builderui_back: #ffffff;
+	--bog_builderui_card: #f8fafc;
+	--bog_builderui_field: #f1f5f9;
+	--bog_builderui_text: #0f172a;
+	--bog_builderui_shade: #64748b;
+	--bog_builderui_line: #e2e8f0;
+	--bog_builderui_hover: #0000000a;
+}
+
+/* === Stone === */
+[bog_builderui_base="stone"][bog_builderui_lights="dark"] {
+	--bog_builderui_back: #0c0a09;
+	--bog_builderui_card: #1c1917;
+	--bog_builderui_field: #292524;
+	--bog_builderui_text: #fafaf9;
+	--bog_builderui_shade: #a8a29e;
+	--bog_builderui_line: #292524;
+	--bog_builderui_hover: #ffffff0d;
+}
+[bog_builderui_base="stone"][bog_builderui_lights="light"] {
+	--bog_builderui_back: #fafaf9;
+	--bog_builderui_card: #ffffff;
+	--bog_builderui_field: #f5f5f4;
+	--bog_builderui_text: #0c0a09;
+	--bog_builderui_shade: #78716c;
+	--bog_builderui_line: #e7e5e4;
+	--bog_builderui_hover: #0000000a;
+}
+
+/* === Zinc === */
+[bog_builderui_base="zinc"][bog_builderui_lights="dark"] {
+	--bog_builderui_back: #09090b;
+	--bog_builderui_card: #18181b;
+	--bog_builderui_field: #27272a;
+	--bog_builderui_text: #fafafa;
+	--bog_builderui_shade: #a1a1aa;
+	--bog_builderui_line: #27272a;
+	--bog_builderui_hover: #ffffff0d;
+}
+[bog_builderui_base="zinc"][bog_builderui_lights="light"] {
+	--bog_builderui_back: #ffffff;
+	--bog_builderui_card: #fafafa;
+	--bog_builderui_field: #f4f4f5;
+	--bog_builderui_text: #09090b;
+	--bog_builderui_shade: #71717a;
+	--bog_builderui_line: #e4e4e7;
+	--bog_builderui_hover: #0000000a;
+}
+
+/* === Gray === */
+[bog_builderui_base="gray"][bog_builderui_lights="dark"] {
+	--bog_builderui_back: #030712;
+	--bog_builderui_card: #111827;
+	--bog_builderui_field: #1f2937;
+	--bog_builderui_text: #f9fafb;
+	--bog_builderui_shade: #9ca3af;
+	--bog_builderui_line: #1f2937;
+	--bog_builderui_hover: #ffffff0d;
+}
+[bog_builderui_base="gray"][bog_builderui_lights="light"] {
+	--bog_builderui_back: #ffffff;
+	--bog_builderui_card: #f9fafb;
+	--bog_builderui_field: #f3f4f6;
+	--bog_builderui_text: #030712;
+	--bog_builderui_shade: #6b7280;
+	--bog_builderui_line: #e5e7eb;
+	--bog_builderui_hover: #0000000a;
+}
+
+/* ============================================================
+   ACCENT THEMES (vars: control, focus, current, special)
+   ============================================================ */
+
+:root,
+[bog_builderui_theme="sky"] {
+	--bog_builderui_control: #0ea5e9;
+	--bog_builderui_focus: #38bdf8;
+	--bog_builderui_current: #06b6d4;
+	--bog_builderui_special: #6366f1;
+}
+[bog_builderui_theme="rose"] {
+	--bog_builderui_control: #f43f5e;
+	--bog_builderui_focus: #fb7185;
+	--bog_builderui_current: #ec4899;
+	--bog_builderui_special: #f97316;
+}
+[bog_builderui_theme="violet"] {
+	--bog_builderui_control: #8b5cf6;
+	--bog_builderui_focus: #a78bfa;
+	--bog_builderui_current: #6366f1;
+	--bog_builderui_special: #d946ef;
+}
+[bog_builderui_theme="emerald"] {
+	--bog_builderui_control: #10b981;
+	--bog_builderui_focus: #34d399;
+	--bog_builderui_current: #14b8a6;
+	--bog_builderui_special: #84cc16;
+}
+[bog_builderui_theme="amber"] {
+	--bog_builderui_control: #f59e0b;
+	--bog_builderui_focus: #fbbf24;
+	--bog_builderui_current: #f97316;
+	--bog_builderui_special: #eab308;
+}
+
+/* ============================================================
+   Bridge to --mol_theme_* so stock $mol components ($mol_chart,
+   $mol_button, $mol_string) pick up our palette automatically.
+   ============================================================ */
+:where([bog_builderui_lights]) {
+	--mol_theme_back: var(--bog_builderui_back);
+	--mol_theme_card: var(--bog_builderui_card);
+	--mol_theme_field: var(--bog_builderui_field);
+	--mol_theme_hover: var(--bog_builderui_hover);
+	--mol_theme_text: var(--bog_builderui_text);
+	--mol_theme_shade: var(--bog_builderui_shade);
+	--mol_theme_line: var(--bog_builderui_line);
+	--mol_theme_focus: var(--bog_builderui_focus);
+	--mol_theme_control: var(--bog_builderui_control);
+	--mol_theme_current: var(--bog_builderui_current);
+	--mol_theme_special: var(--bog_builderui_special);
+}
+
+/* ============================================================
+   CHART COLOR — independent accent for the chart bar/line
+   ============================================================ */
+:root,
+[bog_builderui_chart="blue"] { --bog_builderui_chart: #3b82f6; }
+[bog_builderui_chart="green"] { --bog_builderui_chart: #10b981; }
+[bog_builderui_chart="red"] { --bog_builderui_chart: #ef4444; }
+[bog_builderui_chart="yellow"] { --bog_builderui_chart: #eab308; }
+[bog_builderui_chart="purple"] { --bog_builderui_chart: #a855f7; }
+
+/* ============================================================
+   Popover for $bog_builderui_select (style the $mol_pop bubble
+   when it sits inside our scope or carries our marker)
+   ============================================================ */
+[bog_builderui_lights] [mol_pop_bubble],
+[bog_builderui_pop] {
+	background-color: var(--bog_builderui_card);
+	border: 1px solid var(--bog_builderui_line);
+	border-radius: var(--bog_builderui_radius);
+	box-shadow: 0 10px 30px #00000059;
+	padding: 0.375rem;
+	gap: 0.125rem;
+	min-width: 14rem;
+	overflow: hidden;
+}
+
+[bog_builderui_lights] [mol_select_filter] {
+	display: none;
+}
+
+[bog_builderui_lights] [mol_select_option_row] {
+	border-radius: calc(var(--bog_builderui_radius) - 2px);
+	padding: 0.5rem 0.75rem;
+	color: var(--bog_builderui_text);
+	font-family: var(--bog_builderui_font_body);
+	font-size: 0.9rem;
+	background-color: transparent;
+}
+
+[bog_builderui_lights] [mol_select_option_row]:hover {
+	background-color: var(--bog_builderui_hover);
+}
+
+[bog_builderui_lights] [mol_select_option_label] {
+	padding: 0;
+	color: inherit;
+}
+
+[bog_builderui_lights] [mol_select_no_options] {
+	color: var(--bog_builderui_shade);
+	padding: 0.5rem 0.75rem;
+}
+
+[bog_builderui_lights] [bog_builderui_select] [mol_select_trigger] {
+	gap: 0.5rem;
+	padding: 0 0.25rem 0 0;
+}
+[bog_builderui_lights] [bog_builderui_select] [mol_select_trigger] > * {
+	margin-right: 0;
+}
+
+/* ============================================================
+   Skeleton — any $mol_view in pending state gets a pulsing surface
+   ============================================================ */
+@keyframes bog_builderui_skeleton_pulse {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.5; }
+}
+
+[bog_builderui_lights] [mol_view][mol_view_error="Promise"],
+[bog_builderui_lights] [mol_view][mol_view_error="$mol_promise_blocker"] {
+	border-radius: var(--bog_builderui_radius);
+	background-color: var(--bog_builderui_field);
+	color: transparent;
+	animation: bog_builderui_skeleton_pulse 1.6s ease-in-out infinite;
+}
+
+/* ============================================================
+   Tooltip surface
+   ============================================================ */
+[bog_builderui_lights] [bog_builderui_tooltip] [mol_pop_bubble] {
+	background-color: var(--bog_builderui_text);
+	color: var(--bog_builderui_back);
+	border: none;
+	border-radius: calc(var(--bog_builderui_radius) - 2px);
+	padding: 0.375rem 0.625rem;
+	font-family: var(--bog_builderui_font_body);
+	font-size: 0.8rem;
+	box-shadow: 0 4px 12px #0000004d;
+	min-width: 0;
+}
+
+</style><style id="$mol_style_attach:$bog_apps_app">[bog_apps_app] {
+	flex-direction: column;
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: var(--bog_builderui_back);
+	color: var(--bog_builderui_text);
+}
+[bog_apps_app_top] {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding-top: 0.625rem;
+	padding-bottom: 0.625rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	background-color: var(--bog_builderui_card);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: var(--bog_builderui_line);
+}
+[bog_apps_app_top_name] {
+	font-family: var(--bog_builderui_font_head);
+	font-size: 1.125rem;
+	font-weight: 600;
+	letter-spacing: -0.01em;
+	white-space: nowrap;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	min-width: 0;
+}
+[bog_apps_app_top_tools] {
+	flex-direction: row;
+	flex-grow: 0;
+	flex-shrink: 0;
+	align-items: center;
+	gap: 0.5rem;
+}
+[bog_apps_app_top_tg] {
+	color: var(--bog_builderui_control);
+	font-weight: 600;
+	font-size: 0.9375rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-top: 0.375rem;
+	padding-bottom: 0.375rem;
+	border-radius: 0.375rem;
+}
+[bog_apps_app_body] {
+	flex-direction: column;
+	flex-grow: 1;
+}
+[bog_apps_app_hero] {
+	flex-direction: column;
+	align-items: center;
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+	padding-left: var(--mol_gap_block);
+	padding-right: var(--mol_gap_block);
+}
+[bog_apps_app_hero_head] {
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+	width: 100%;
+	max-width: 52rem;
+}
+[bog_apps_app_hero_eyebrow] {
+	display: block;
+	font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.12rem;
+	text-transform: uppercase;
+	color: var(--bog_builderui_shade);
+	text-align: center;
+}
+[bog_apps_app_hero_title] {
+	display: block;
+	font-family: var(--bog_builderui_font_head);
+	font-size: 3.5rem;
+	font-weight: 500;
+	line-height: 1.12;
+	letter-spacing: -0.02em;
+	text-align: center;
+	color: var(--bog_builderui_text);
+	max-width: 100%;
+	overflow-wrap: break-word;
+}
+[bog_apps_app_hero_title_accent] {
+	display: inline;
+	color: var(--bog_builderui_special);
+}
+[bog_apps_app_hero_subtitle] {
+	display: block;
+	font-size: 1.1875rem;
+	line-height: 1.55;
+	text-align: center;
+	max-width: 40rem;
+	color: var(--bog_builderui_shade);
+}
+[bog_apps_app_hero_actions] {
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0.5rem;
+}
+[bog_apps_app_cta_tg] {
+	flex-direction: row;
+	align-items: center;
+	gap: 0.4rem;
+	background-color: var(--bog_builderui_current);
+	color: var(--bog_builderui_back);
+	padding-left: 1.125rem;
+	padding-right: 1.125rem;
+	padding-top: 0.625rem;
+	padding-bottom: 0.625rem;
+	border-radius: 0.375rem;
+	font-weight: 600;
+}
+[bog_apps_app_cta_tg_icon] {
+	width: 0.9rem;
+	height: 0.9rem;
+}
+[bog_apps_app_cta_cases] {
+	flex-direction: row;
+	align-items: center;
+	gap: 0.4rem;
+	background-color: transparent;
+	color: var(--bog_builderui_control);
+	padding-left: 1.125rem;
+	padding-right: 1.125rem;
+	padding-top: 0.5625rem;
+	padding-bottom: 0.5625rem;
+	border-radius: 0.375rem;
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--bog_builderui_line);
+	font-weight: 600;
+}
+[bog_apps_app_features] {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2.5rem;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	padding-left: var(--mol_gap_block);
+	padding-right: var(--mol_gap_block);
+	max-width: 62rem;
+	width: 100%;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+}
+[bog_apps_app_feature] {
+	flex-direction: column;
+	gap: 0.5rem;
+	min-width: 0;
+}
+[bog_apps_app_feature_title] {
+	display: block;
+	font-family: var(--bog_builderui_font_head);
+	font-size: 1.375rem;
+	font-weight: 500;
+	letter-spacing: -0.01em;
+}
+[bog_apps_app_feature_title]::first-letter {
+	color: var(--bog_builderui_special);
+}
+[bog_apps_app_feature_text] {
+	display: block;
+	color: var(--bog_builderui_shade);
+	line-height: 1.6;
+}
+[bog_apps_app_cases] {
+	flex-direction: column;
+	gap: 1.5rem;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	padding-left: var(--mol_gap_block);
+	padding-right: var(--mol_gap_block);
+	max-width: 62rem;
+	width: 100%;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+}
+[bog_apps_app_cases_title] {
+	display: block;
+	font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.12rem;
+	text-transform: uppercase;
+	color: var(--bog_builderui_shade);
+}
+[bog_apps_app_cases_list] {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.25rem;
+}
+[bog_apps_app_case] {
+	flex-direction: column;
+	gap: 0.5rem;
+	min-width: 0;
+	background-color: var(--bog_builderui_card);
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--bog_builderui_line);
+	border-radius: 0.75rem;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+[bog_apps_app_case_title] {
+	display: block;
+	font-family: var(--bog_builderui_font_head);
+	font-size: 1.375rem;
+	font-weight: 500;
+	letter-spacing: -0.01em;
+}
+[bog_apps_app_case_title]::first-letter {
+	color: var(--bog_builderui_special);
+}
+[bog_apps_app_case_text] {
+	display: block;
+	color: var(--bog_builderui_shade);
+	line-height: 1.6;
+	flex-grow: 1;
+}
+[bog_apps_app_case_links] {
+	flex-direction: row;
+	gap: 1rem;
+	margin-top: 0.5rem;
+}
+[bog_apps_app_case_demo] {
+	color: var(--bog_builderui_control);
+	font-weight: 600;
+	font-size: 0.9375rem;
+}
+[bog_apps_app_case_source] {
+	color: var(--bog_builderui_control);
+	font-weight: 600;
+	font-size: 0.9375rem;
+}
+[bog_apps_app_process] {
+	flex-direction: column;
+	gap: 1.5rem;
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+	padding-left: var(--mol_gap_block);
+	padding-right: var(--mol_gap_block);
+	max-width: 62rem;
+	width: 100%;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+}
+[bog_apps_app_process_title] {
+	display: block;
+	font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.12rem;
+	text-transform: uppercase;
+	color: var(--bog_builderui_shade);
+}
+[bog_apps_app_process_list] {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem;
+}
+[bog_apps_app_step] {
+	flex-direction: column;
+	gap: 0.5rem;
+	min-width: 0;
+}
+[bog_apps_app_step_num] {
+	display: block;
+	font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.12rem;
+	text-transform: uppercase;
+	color: var(--bog_builderui_special);
+}
+[bog_apps_app_step_title] {
+	display: block;
+	font-family: var(--bog_builderui_font_head);
+	font-size: 1.375rem;
+	font-weight: 500;
+	letter-spacing: -0.01em;
+}
+[bog_apps_app_step_title]::first-letter {
+	color: var(--bog_builderui_special);
+}
+[bog_apps_app_step_text] {
+	display: block;
+	color: var(--bog_builderui_shade);
+	line-height: 1.6;
+	font-size: 0.9375rem;
+}
+[bog_apps_app_footer] {
+	flex-direction: column;
+	gap: 1rem;
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: var(--bog_builderui_line);
+	margin-top: auto;
+	align-items: center;
+}
+[bog_apps_app_requisites] {
+	flex-direction: column;
+	align-items: center;
+	gap: 0.375rem;
+	font-size: 0.875rem;
+	color: var(--bog_builderui_shade);
+	text-align: center;
+}
+[bog_apps_app_requisites_title] {
+	display: block;
+	font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.12rem;
+	text-transform: uppercase;
+	color: var(--bog_builderui_shade);
+	padding-bottom: 0.375rem;
+}
+[bog_apps_app_requisites_contacts] {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+}
+[bog_apps_app_mail_link] {
+	color: var(--bog_builderui_control);
+}
+[bog_apps_app_tg_link] {
+	color: var(--bog_builderui_control);
+}
+[bog_apps_app_github_link] {
+	color: var(--bog_builderui_control);
+}
+@media (max-width: 47.9375rem) {
+[bog_apps_app_hero] {
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+[bog_apps_app_hero_head] {
+	gap: 1.25rem;
+}
+[bog_apps_app_hero_title] {
+	font-size: 1.875rem;
+}
+[bog_apps_app_hero_subtitle] {
+	font-size: 1.0625rem;
+}
+[bog_apps_app_top_name] {
+	font-size: 1rem;
+}
+[bog_apps_app_features] {
+	grid-template-columns: 1fr;
+	gap: 1.75rem;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+[bog_apps_app_cases_list] {
+	grid-template-columns: 1fr;
+}
+[bog_apps_app_process_list] {
+	grid-template-columns: 1fr 1fr;
+	gap: 1.5rem;
+}
+}
+@media (max-width: 60rem) and (min-width: 48rem) {
+[bog_apps_app_features] {
+	grid-template-columns: 1fr 1fr;
+}
+[bog_apps_app_cases_list] {
+	grid-template-columns: 1fr;
+}
+}
+</style><style id="$mol_style_attach:$bog_apps_app.palette">
+		[bog_apps_app][bog_builderui_base][bog_builderui_lights="light"] {
+			--bog_builderui_control: hsl( 210, 68%, 42% );
+			--bog_builderui_focus: hsl( 210, 72%, 36% );
+			--bog_builderui_current: hsl( 210, 68%, 42% );
+			--bog_builderui_special: hsl( 26, 82%, 44% );
+			--bog_builderui_back: #faf9f7;
+			--bog_builderui_card: #ffffff;
+		}
+		[bog_apps_app][bog_builderui_base][bog_builderui_lights="dark"] {
+			--bog_builderui_control: hsl( 210, 72%, 64% );
+			--bog_builderui_focus: hsl( 210, 76%, 72% );
+			--bog_builderui_current: hsl( 210, 72%, 64% );
+			--bog_builderui_special: hsl( 30, 85%, 60% );
+			--bog_builderui_text: #d4d4d8;
+			--bog_builderui_back: #18181b;
+			--bog_builderui_card: #09090b;
+		}
+	</style><style id="$mol_style_attach:$bog_apps_app.craft">
+		[bog_apps_app_case] {
+			box-shadow: 0 20px 48px -28px rgba( 0, 0, 0, 0.25 );
+		}
+
+		[bog_apps_app_hero_head] {
+			animation: bog_apps_rise 0.7s cubic-bezier( 0.22, 1, 0.36, 1 ) both;
+		}
+
+		[bog_apps_app_cta_tg],
+		[bog_apps_app_cta_cases] {
+			transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease, background-color .12s ease, filter .12s ease;
+		}
+		[bog_apps_app_cta_tg]:hover {
+			transform: translateY( -1px );
+			filter: brightness( 1.06 );
+			box-shadow: 0 6px 16px -8px var( --bog_builderui_current );
+			background-color: var( --bog_builderui_current );
+		}
+		[bog_apps_app_cta_tg]:focus-visible {
+			background-color: var( --bog_builderui_current );
+		}
+		[bog_apps_app_cta_tg]:active {
+			color: var( --bog_builderui_back );
+		}
+		[bog_apps_app_cta_cases]:hover {
+			transform: translateY( -1px );
+			border-color: var( --bog_builderui_control );
+			background: var( --bog_builderui_hover );
+		}
+
+		[bog_apps_app_cta_tg]:focus-visible,
+		[bog_apps_app_cta_cases]:focus-visible {
+			outline: 2px solid var( --bog_builderui_focus );
+			outline-offset: 2px;
+		}
+
+		@keyframes bog_apps_rise {
+			from { opacity: 0; transform: translateY( 10px ) }
+			to { opacity: 1; transform: none }
+		}
+		@media ( prefers-reduced-motion: reduce ) {
+			[bog_apps_app_hero_head] { animation: none }
+		}
+	</style></head>
+	<body mol_view_root="">
+		<div mol_view_root="$bog_apps_app" id="$bog_apps_app.Root(0)" bog_apps_app="" bog_builderui_div="" mol_view="" bog_builderui_lights="light" bog_builderui_base="zinc" bog_builderui_theme="sky" bog_builderui_radius="medium" bog_builderui_font_body="inter" bog_builderui_font_head="eb-garamond" bog_apps_app_theme="" bog_theme_auto="" mol_plugin="" mol_theme="$mol_theme_calm_light" bog_apps_app_favicon="" bog_favicon=""><mol_view id="$bog_apps_app.Root(0).Top()" bog_apps_app_top="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Top_name()" bog_apps_app_top_name="" mol_view="">Кирилл Новгородцев</mol_view><mol_view id="$bog_apps_app.Root(0).Top_tools()" bog_apps_app_top_tools="" mol_view=""><a id="$bog_apps_app.Root(0).Top_tg()" bog_apps_app_top_tg="" mol_link="" mol_view="" href="https://t.me/Dev_cmyser?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D0%B2%D0%B0%D1%88%D0%B5%D0%B3%D0%BE%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%E2%80%94%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%20%D0%BD%D0%B0%20%D0%B2%D0%B5%D0%B1-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C." title="" target="_blank" rel="">Telegram</a><bog_theme_toggle id="$bog_apps_app.Root(0).Theme_toggle()" bog_apps_app_theme_toggle="" bog_theme_toggle="" mol_pop="" mol_view=""><mol_button_minor id="$bog_apps_app.Root(0).Theme_toggle().Anchor()" bog_theme_toggle_anchor="" mol_pop_anchor="" bog_apps_app_theme_toggle_anchor="" mol_button_minor="" mol_button_typed="" mol_button="" mol_view="" role="button" tabindex="0" title="Как в системе"><svg id="$bog_apps_app.Root(0).Theme_toggle().Icon_system()" bog_theme_toggle_icon_system="" bog_apps_app_theme_toggle_icon_system="" mol_icon_monitor="" mol_icon="" mol_svg_root="" mol_svg="" mol_view="" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid"><path id="$bog_apps_app.Root(0).Theme_toggle().Icon_system().Path()" mol_icon_monitor_path="" mol_icon_path="" bog_theme_toggle_icon_system_path="" bog_apps_app_theme_toggle_icon_system_path="" mol_svg_path="" mol_svg="" mol_view="" d="M21,16H3V4H21M21,2H3C1.89,2 1,2.89 1,4V16A2,2 0 0,0 3,18H10V20H8V22H16V20H14V18H21A2,2 0 0,0 23,16V4C23,2.89 22.1,2 21,2Z"></path></svg></mol_button_minor></bog_theme_toggle></mol_view></mol_view><main id="$bog_apps_app.Root(0).Body()" bog_apps_app_body="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Hero()" bog_apps_app_hero="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Hero_head()" bog_apps_app_hero_head="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Hero_eyebrow()" bog_apps_app_hero_eyebrow="" mol_view="">Local-first веб-приложения</mol_view><h1 id="$bog_apps_app.Root(0).Hero_title()" bog_apps_app_hero_title="" mol_view="">Веб-приложения, которые работают<span id="$bog_apps_app.Root(0).Hero_title_accent()" bog_apps_app_hero_title_accent="" mol_view=""> как нативные</span></h1><mol_view id="$bog_apps_app.Root(0).Hero_subtitle()" bog_apps_app_hero_subtitle="" mol_view="">Меня зовут Кирилл Новгородцев. Делаю сайты и веб-аппки: офлайн, на всех платформах, без серверной инфраструктуры.</mol_view><mol_view id="$bog_apps_app.Root(0).Hero_actions()" bog_apps_app_hero_actions="" mol_view=""><a id="$bog_apps_app.Root(0).Cta_tg()" bog_apps_app_cta_tg="" mol_link="" mol_view="" href="https://t.me/Dev_cmyser?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D0%B2%D0%B0%D1%88%D0%B5%D0%B3%D0%BE%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%E2%80%94%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%20%D0%BD%D0%B0%20%D0%B2%D0%B5%D0%B1-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C." title="" target="_blank" rel=""><span id="$bog_apps_app.Root(0).Cta_tg_label()" bog_apps_app_cta_tg_label="" mol_view="">Написать в Telegram</span><svg id="$bog_apps_app.Root(0).Cta_tg_icon()" bog_apps_app_cta_tg_icon="" mol_icon_arrow_right="" mol_icon="" mol_svg_root="" mol_svg="" mol_view="" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid"><path id="$bog_apps_app.Root(0).Cta_tg_icon().Path()" mol_icon_arrow_right_path="" mol_icon_path="" bog_apps_app_cta_tg_icon_path="" mol_svg_path="" mol_svg="" mol_view="" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path></svg></a><mol_button_minor id="$bog_apps_app.Root(0).Cta_cases()" bog_apps_app_cta_cases="" mol_button_minor="" mol_button_typed="" mol_button="" mol_view="" role="button" tabindex="0" title=""><span id="$bog_apps_app.Root(0).Cta_cases_label()" bog_apps_app_cta_cases_label="" mol_view="">Посмотреть кейсы</span></mol_button_minor></mol_view></mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Features()" bog_apps_app_features="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Feature('platforms')" bog_apps_app_feature="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Feature_title('platforms')" bog_apps_app_feature_title="" mol_view="">Все платформы сразу</mol_view><mol_view id="$bog_apps_app.Root(0).Feature_text('platforms')" bog_apps_app_feature_text="" mol_view="">Web, Windows, macOS, Linux, Android, iOS и браузерные расширения — из одной кодовой базы.</mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Feature('offline')" bog_apps_app_feature="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Feature_title('offline')" bog_apps_app_feature_title="" mol_view="">Работает офлайн</mol_view><mol_view id="$bog_apps_app.Root(0).Feature_text('offline')" bog_apps_app_feature_text="" mol_view="">Пропал интернет — приложение продолжает работать. Сеть вернулась — данные синхронизируются сами, без конфликтов.</mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Feature('serverless')" bog_apps_app_feature="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Feature_title('serverless')" bog_apps_app_feature_title="" mol_view="">Без серверной инфраструктуры</mol_view><mol_view id="$bog_apps_app.Root(0).Feature_text('serverless')" bog_apps_app_feature_text="" mol_view="">Не нужно поднимать БД, платить за сервер и хранить бэкапы: данные живут у пользователей и синхронизируются через распределённое хранилище.</mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Feature('auth')" bog_apps_app_feature="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Feature_title('auth')" bog_apps_app_feature_title="" mol_view="">Вход без регистрации</mol_view><mol_view id="$bog_apps_app.Root(0).Feature_text('auth')" bog_apps_app_feature_text="" mol_view="">Авторизация происходит мгновенно при первой загрузке — без паролей и подтверждений почты.</mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Feature('crypto')" bog_apps_app_feature="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Feature_title('crypto')" bog_apps_app_feature_title="" mol_view="">Шифрование end-to-end</mol_view><mol_view id="$bog_apps_app.Root(0).Feature_text('crypto')" bog_apps_app_feature_text="" mol_view="">Все изменения подписаны автором, а приватные данные можно шифровать прямо на устройстве — до отправки в сеть.</mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Feature('hosting')" bog_apps_app_feature="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Feature_title('hosting')" bog_apps_app_feature_title="" mol_view="">Хостинг от 0 ₽</mol_view><mol_view id="$bog_apps_app.Root(0).Feature_text('hosting')" bog_apps_app_feature_text="" mol_view="">Приложение — статика: GitHub Pages бесплатно, либо любой обычный сервер, если нужен SEO.</mol_view></mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Cases()" bog_apps_app_cases="" mol_view=""><h2 id="$bog_apps_app.Root(0).Cases_title()" bog_apps_app_cases_title="" mol_view="">Кейсы</h2><mol_view id="$bog_apps_app.Root(0).Cases_list()" bog_apps_app_cases_list="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Case('gram')" bog_apps_app_case="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Case_title('gram')" bog_apps_app_case_title="" mol_view="">Gram</mol_view><mol_view id="$bog_apps_app.Root(0).Case_text('gram')" bog_apps_app_case_text="" mol_view="">Мессенджер: переписка синхронизируется между устройствами, правка и удаление сообщений, отметки о прочтении. Работает без своего сервера.</mol_view><mol_view id="$bog_apps_app.Root(0).Case_links('gram')" bog_apps_app_case_links="" mol_view=""><a id="$bog_apps_app.Root(0).Case_demo('gram')" bog_apps_app_case_demo="" mol_link="" mol_view="" href="https://b-on-g.github.io/gram/" title="" target="_blank" rel="">Открыть</a><a id="$bog_apps_app.Root(0).Case_source('gram')" bog_apps_app_case_source="" mol_link="" mol_view="" href="https://github.com/b-on-g/gram" title="" target="_blank" rel="">Исходники</a></mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Case('blitz')" bog_apps_app_case="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Case_title('blitz')" bog_apps_app_case_title="" mol_view="">Blitz Quiz</mol_view><mol_view id="$bog_apps_app.Root(0).Case_text('blitz')" bog_apps_app_case_text="" mol_view="">Реалтайм-викторина: хост создаёт комнату, игроки подключаются по QR-коду и отвечают наперегонки. Таймер, лидерборд, админка с генерацией вопросов.</mol_view><mol_view id="$bog_apps_app.Root(0).Case_links('blitz')" bog_apps_app_case_links="" mol_view=""><a id="$bog_apps_app.Root(0).Case_demo('blitz')" bog_apps_app_case_demo="" mol_link="" mol_view="" href="https://b-on-g.github.io/blitz/" title="" target="_blank" rel="">Открыть</a><a id="$bog_apps_app.Root(0).Case_source('blitz')" bog_apps_app_case_source="" mol_link="" mol_view="" href="https://github.com/b-on-g/blitz" title="" target="_blank" rel="">Исходники</a></mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Case('music')" bog_apps_app_case="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Case_title('music')" bog_apps_app_case_title="" mol_view="">Bog Music</mol_view><mol_view id="$bog_apps_app.Root(0).Case_text('music')" bog_apps_app_case_text="" mol_view="">Музыкальный плеер: веб-версия и расширение Chrome, фоновое воспроизведение, шеринг треков по ссылке.</mol_view><mol_view id="$bog_apps_app.Root(0).Case_links('music')" bog_apps_app_case_links="" mol_view=""><a id="$bog_apps_app.Root(0).Case_demo('music')" bog_apps_app_case_demo="" mol_link="" mol_view="" href="https://b-on-g.github.io/music/" title="" target="_blank" rel="">Открыть</a><a id="$bog_apps_app.Root(0).Case_source('music')" bog_apps_app_case_source="" mol_link="" mol_view="" href="https://github.com/b-on-g/music" title="" target="_blank" rel="">Исходники</a></mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Case('smalljs')" bog_apps_app_case="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Case_title('smalljs')" bog_apps_app_case_title="" mol_view="">Small JS</mol_view><mol_view id="$bog_apps_app.Root(0).Case_text('smalljs')" bog_apps_app_case_text="" mol_view="">Сайт документации веб-фреймворка: гайды на 15 языках, полнотекстовый и семантический поиск, песочница с живым кодом и интерактивный курс.</mol_view><mol_view id="$bog_apps_app.Root(0).Case_links('smalljs')" bog_apps_app_case_links="" mol_view=""><a id="$bog_apps_app.Root(0).Case_demo('smalljs')" bog_apps_app_case_demo="" mol_link="" mol_view="" href="https://b-on-g.github.io/smalljs/" title="" target="_blank" rel="">Открыть</a><a id="$bog_apps_app.Root(0).Case_source('smalljs')" bog_apps_app_case_source="" mol_link="" mol_view="" href="https://github.com/b-on-g/smalljs" title="" target="_blank" rel="">Исходники</a></mol_view></mol_view></mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Process()" bog_apps_app_process="" mol_view=""><h2 id="$bog_apps_app.Root(0).Process_title()" bog_apps_app_process_title="" mol_view="">Как идёт работа</h2><mol_view id="$bog_apps_app.Root(0).Process_list()" bog_apps_app_process_list="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Step(0)" bog_apps_app_step="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Step_num(0)" bog_apps_app_step_num="" mol_view="">01</mol_view><mol_view id="$bog_apps_app.Root(0).Step_title(0)" bog_apps_app_step_title="" mol_view="">Заявка</mol_view><mol_view id="$bog_apps_app.Root(0).Step_text(0)" bog_apps_app_step_text="" mol_view="">Напишите в Telegram пару предложений: что за продукт и для кого — обсудим объём и сроки.</mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Step(1)" bog_apps_app_step="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Step_num(1)" bog_apps_app_step_num="" mol_view="">02</mol_view><mol_view id="$bog_apps_app.Root(0).Step_title(1)" bog_apps_app_step_title="" mol_view="">Прототип</mol_view><mol_view id="$bog_apps_app.Root(0).Step_text(1)" bog_apps_app_step_text="" mol_view="">Собираю рабочий прототип, чтобы идею можно было пощупать руками, а не смотреть на макеты.</mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Step(2)" bog_apps_app_step="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Step_num(2)" bog_apps_app_step_num="" mol_view="">03</mol_view><mol_view id="$bog_apps_app.Root(0).Step_title(2)" bog_apps_app_step_title="" mol_view="">Итерации</mol_view><mol_view id="$bog_apps_app.Root(0).Step_text(2)" bog_apps_app_step_text="" mol_view="">Дорабатываем короткими итерациями, каждая версия сразу доступна по ссылке.</mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Step(3)" bog_apps_app_step="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Step_num(3)" bog_apps_app_step_num="" mol_view="">04</mol_view><mol_view id="$bog_apps_app.Root(0).Step_title(3)" bog_apps_app_step_title="" mol_view="">Запуск</mol_view><mol_view id="$bog_apps_app.Root(0).Step_text(3)" bog_apps_app_step_text="" mol_view="">Деплой на ваш домен или GitHub Pages. Договор и безнал — работаю как ИП.</mol_view></mol_view></mol_view></mol_view><mol_view id="$bog_apps_app.Root(0).Footer()" bog_apps_app_footer="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Requisites()" bog_apps_app_requisites="" mol_view=""><mol_view id="$bog_apps_app.Root(0).Requisites_title()" bog_apps_app_requisites_title="" mol_view="">Реквизиты</mol_view><mol_view id="$bog_apps_app.Root(0).Requisites_name()" bog_apps_app_requisites_name="" mol_view="">ИП Новгородцев Кирилл Александрович</mol_view><mol_view id="$bog_apps_app.Root(0).Requisites_ids()" bog_apps_app_requisites_ids="" mol_view="">ОГРНИП 325350000056770 · ИНН 351400789430</mol_view><mol_view id="$bog_apps_app.Root(0).Requisites_contacts()" bog_apps_app_requisites_contacts="" mol_view=""><a id="$bog_apps_app.Root(0).Mail_link()" bog_apps_app_mail_link="" mol_link="" mol_view="" href="mailto:cmyser.fast@mail.ru" title="" target="_blank" rel="">cmyser.fast@mail.ru</a><a id="$bog_apps_app.Root(0).Tg_link()" bog_apps_app_tg_link="" mol_link="" mol_view="" href="https://t.me/Dev_cmyser?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D0%B2%D0%B0%D1%88%D0%B5%D0%B3%D0%BE%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%E2%80%94%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%20%D0%BD%D0%B0%20%D0%B2%D0%B5%D0%B1-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C." title="" target="_blank" rel="">@Dev_cmyser</a><a id="$bog_apps_app.Root(0).Github_link()" bog_apps_app_github_link="" mol_link="" mol_view="" href="https://github.com/b-on-g/apps" title="" target="_blank" rel="">Исходники сайта</a></mol_view></mol_view></mol_view></main></div>
 		<script src="web.js"></script>
 		<!-- GEO Audit AI traffic pixel -->
 		<script>
@@ -74,5 +2381,6 @@
 		  } catch (e) {}
 		})();
 		</script>
-	</body>
-</html>
+	
+
+</body></html>

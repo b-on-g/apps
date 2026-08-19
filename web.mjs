@@ -11356,7 +11356,7 @@ var $;
 		Hero_title_accent(){
 			const obj = new this.$.$mol_view();
 			(obj.dom_name) = () => ("span");
-			(obj.sub) = () => (["как нативные"]);
+			(obj.sub) = () => ([" как нативные"]);
 			return obj;
 		}
 		Hero_title(){
@@ -11541,7 +11541,7 @@ var $;
 			return obj;
 		}
 		title(){
-			return "Кирилл Новгородцев — веб-приложения";
+			return "Веб-приложения, которые работают как нативные — Кирилл Новгородцев";
 		}
 		lights(){
 			return "light";
@@ -11995,10 +11995,12 @@ var $;
             maxWidth: '100%',
             overflowWrap: 'break-word',
         },
+        // Пробел перед акцентом — настоящий текстовый узел в view.tree, а не
+        // margin: краулеры и LLM читают textContent, где margin'а нет, и склеивали
+        // «работаюткак нативные».
         Hero_title_accent: {
             display: 'inline',
             color: $bog_builderui_tokens.special,
-            margin: { left: '0.22em' },
         },
         Hero_subtitle: {
             display: 'block',
