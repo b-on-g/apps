@@ -99,10 +99,12 @@ namespace $ {
 			overflowWrap: 'break-word',
 		},
 
+		// Пробел перед акцентом — настоящий текстовый узел в view.tree, а не
+		// margin: краулеры и LLM читают textContent, где margin'а нет, и склеивали
+		// «работаюткак нативные».
 		Hero_title_accent: {
 			display: 'inline',
 			color: $bog_builderui_tokens.special,
-			margin: { left: '0.22em' },
 		},
 
 		Hero_subtitle: {

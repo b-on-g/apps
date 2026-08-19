@@ -22,6 +22,31 @@ jobs:
                   package: "bog/apps"
                   modules: 'app'
 
+            # SEO/GEO: $mol рисует страницу скриптом, поэтому в отдаваемом HTML было
+            # ноль текста — GPTBot, PerplexityBot и прочие JS не исполняют и видели
+            # пустую страницу. Экшен поднимает бандл в Puppeteer, ждёт отрисовки и
+            # кладёт снимок обратно в index.html, плюс генерирует sitemap.xml и
+            # robots.txt. Скрипт web.js в снимке остаётся: он лежит РЯДОМ с корнем
+            # приложения, а не внутри него — иначе $mol снёс бы его при старте и
+            # выложилась бы мёртвая статика.
+            # continue-on-error: сбой пререндера оставляет обычный SPA — деградация,
+            # а не падение выкладки.
+            - name: Prerender to static HTML (SEO)
+              if: github.ref == 'refs/heads/main'
+              continue-on-error: true
+              uses: b-on-g/mol-prerender-action@main
+              with:
+                  folder: "bog/apps/app/-"
+                  base-url: "https://b-on-g.github.io/apps/"
+                  viewport: "1280x900"
+
+            # llms.txt (llmstxt.org) — выжимка о бренде, услугах и кейсах простым
+            # текстом, чтобы модели цитировали её вместо разбора вёрстки.
+            # Копируем после пререндера, иначе его вывод затрёт файл.
+            - name: Copy llms.txt
+              if: github.ref == 'refs/heads/main'
+              run: cp bog/apps/llms.txt bog/apps/app/-/llms.txt
+
             - uses: hyoo-ru/gh-deploy@v4.4.1
               if: github.ref == 'refs/heads/main'
               with:
