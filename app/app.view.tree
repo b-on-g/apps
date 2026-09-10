@@ -1,15 +1,11 @@
 $bog_apps_app $bog_builderui_div
 	title \Веб-приложения, которые работают как нативные — Кирилл Новгородцев
 	lights \light
-	attr *
-		^
-		bog_builderui_lights <= lights
-		bog_builderui_base \zinc
-		bog_builderui_theme \sky
-		bog_builderui_radius \medium
-		bog_builderui_font_body \inter
-		bog_builderui_font_head \eb-garamond
 	plugins /
+		<= Skin $bog_builderui_skin
+			lights <= lights
+			base \zinc
+			font_head \eb-garamond
 		<= Theme $bog_theme_auto
 			theme_light \$mol_theme_calm_light
 			theme_dark \$mol_theme_calm_dark
