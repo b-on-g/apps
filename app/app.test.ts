@@ -20,16 +20,19 @@ namespace $ {
 			$mol_assert_equal( decodeURIComponent( uri ).includes( 'есть задача на веб-приложение' ), true )
 		},
 
-		/** Тема читает системную настройку через `this.$.$mol_lights()` — подменяем её в контексте. */
-		'lights follow substituted $mol_lights'( $ ) {
-			const day: $ = Object.create( $ )
-			day.$mol_lights = ()=> true
+		'lights follow the device color scheme'( $ ) {
+			const device = ( light: boolean )=> {
+				const context: $ = Object.create( $ )
+				context.$mol_media = class extends $.$mol_media {
+					static override match() {
+						return light
+					}
+				}
+				return context
+			}
 
-			const night: $ = Object.create( $ )
-			night.$mol_lights = ()=> false
-
-			$mol_assert_equal( $bog_apps_app.make({ $: day }).lights(), 'light' )
-			$mol_assert_equal( $bog_apps_app.make({ $: night }).lights(), 'dark' )
+			$mol_assert_equal( $bog_apps_app.make({ $: device( true ) }).lights(), 'light' )
+			$mol_assert_equal( $bog_apps_app.make({ $: device( false ) }).lights(), 'dark' )
 		},
 
 		/** Хранилище тоже берётся из контекста — подсовываем объект в памяти вместо localStorage. */
@@ -46,7 +49,11 @@ namespace $ {
 			}
 
 			const context: $ = Object.create( $ )
-			context.$mol_lights = ()=> true
+			context.$mol_media = class extends $.$mol_media {
+				static override match() {
+					return true
+				}
+			}
 			context.$mol_state_local = Storage_mock
 
 			const app = $bog_apps_app.make({ $: context })
