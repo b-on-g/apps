@@ -865,32 +865,6 @@ var $;
 var $;
 (function ($_1) {
     $mol_test({
-        'init with overload'() {
-            class X extends $mol_object {
-                foo() {
-                    return 1;
-                }
-            }
-            var x = X.make({
-                foo: () => 2,
-            });
-            $mol_assert_equal(x.foo(), 2);
-        },
-        'Context in instance inherits from class'($) {
-            const custom = $.$mol_ambient({});
-            class X extends $.$mol_object {
-                static $ = custom;
-            }
-            $mol_assert_equal(new X().$, custom);
-        },
-    });
-})($ || ($ = {}));
-
-;
-"use strict";
-var $;
-(function ($_1) {
-    $mol_test({
         'Collect deps'() {
             const pub1 = new $mol_wire_pub;
             const pub2 = new $mol_wire_pub;
@@ -1981,15 +1955,6 @@ var $;
 
 ;
 "use strict";
-var $;
-(function ($_1) {
-    $mol_test_mocks.push($ => {
-        $.$mol_after_frame = $mol_after_mock_commmon;
-    });
-})($ || ($ = {}));
-
-;
-"use strict";
 /** @jsx $mol_jsx */
 var $;
 (function ($) {
@@ -2053,6 +2018,15 @@ var $;
             $mol_assert_equal($mol_key(/./), '/./');
             $mol_assert_equal($mol_key(/\./gimsu), '/\\./gimsu');
         },
+    });
+})($ || ($ = {}));
+
+;
+"use strict";
+var $;
+(function ($_1) {
+    $mol_test_mocks.push($ => {
+        $.$mol_after_frame = $mol_after_mock_commmon;
     });
 })($ || ($ = {}));
 
@@ -2161,53 +2135,24 @@ var $;
 "use strict";
 var $;
 (function ($_1) {
-    $mol_test_mocks.push(context => {
-        class $mol_state_arg_mock extends $mol_state_arg {
-            static $ = context;
-            static href(next) { return next || ''; }
-            static go(next) {
-                this.href(this.link(next));
-            }
-        }
-        __decorate([
-            $mol_mem
-        ], $mol_state_arg_mock, "href", null);
-        __decorate([
-            $mol_action
-        ], $mol_state_arg_mock, "go", null);
-        context.$mol_state_arg = $mol_state_arg_mock;
-    });
     $mol_test({
-        'args as dictionary'($) {
-            $.$mol_state_arg.href('#!foo=bar/xxx');
-            $mol_assert_equal($.$mol_state_arg.dict(), { foo: 'bar', xxx: '' });
-            $.$mol_state_arg.dict({ foo: null, yyy: '', lol: '123' });
-            $mol_assert_equal($.$mol_state_arg.href().replace(/.*#/, '#'), '#!yyy/lol=123');
-        },
-        'one value from args'($) {
-            $.$mol_state_arg.href('#!foo=bar/xxx');
-            $mol_assert_equal($.$mol_state_arg.value('foo'), 'bar');
-            $mol_assert_equal($.$mol_state_arg.value('xxx'), '');
-            $.$mol_state_arg.value('foo', 'lol');
-            $mol_assert_equal($.$mol_state_arg.href().replace(/.*#/, '#'), '#!foo=lol/xxx');
-            $.$mol_state_arg.value('foo', '');
-            $mol_assert_equal($.$mol_state_arg.href().replace(/.*#/, '#'), '#!foo/xxx');
-            $.$mol_state_arg.value('foo', null);
-            $mol_assert_equal($.$mol_state_arg.href().replace(/.*#/, '#'), '#!xxx');
-        },
-        'nested args'($) {
-            const base = new $.$mol_state_arg('nested.');
-            class Nested extends $mol_state_arg {
-                constructor(prefix) {
-                    super(base.prefix + prefix);
+        'init with overload'() {
+            class X extends $mol_object {
+                foo() {
+                    return 1;
                 }
-                static value = (key, next) => base.value(key, next);
             }
-            $.$mol_state_arg.href('#!foo=bar/nested.xxx=123');
-            $mol_assert_equal(Nested.value('foo'), null);
-            $mol_assert_equal(Nested.value('xxx'), '123');
-            Nested.value('foo', 'lol');
-            $mol_assert_equal($.$mol_state_arg.href().replace(/.*#/, '#'), '#!foo=bar/nested.xxx=123/nested.foo=lol');
+            var x = X.make({
+                foo: () => 2,
+            });
+            $mol_assert_equal(x.foo(), 2);
+        },
+        'Context in instance inherits from class'($) {
+            const custom = $.$mol_ambient({});
+            class X extends $.$mol_object {
+                static $ = custom;
+            }
+            $mol_assert_equal(new X().$, custom);
         },
     });
 })($ || ($ = {}));
@@ -3479,6 +3424,95 @@ var $;
 ;
 "use strict";
 var $;
+(function ($_1) {
+    $mol_test_mocks.push(context => {
+        class $mol_state_arg_mock extends $mol_state_arg {
+            static $ = context;
+            static href(next) { return next || ''; }
+            static go(next) {
+                this.href(this.link(next));
+            }
+        }
+        __decorate([
+            $mol_mem
+        ], $mol_state_arg_mock, "href", null);
+        __decorate([
+            $mol_action
+        ], $mol_state_arg_mock, "go", null);
+        context.$mol_state_arg = $mol_state_arg_mock;
+    });
+    $mol_test({
+        'args as dictionary'($) {
+            $.$mol_state_arg.href('#!foo=bar/xxx');
+            $mol_assert_equal($.$mol_state_arg.dict(), { foo: 'bar', xxx: '' });
+            $.$mol_state_arg.dict({ foo: null, yyy: '', lol: '123' });
+            $mol_assert_equal($.$mol_state_arg.href().replace(/.*#/, '#'), '#!yyy/lol=123');
+        },
+        'one value from args'($) {
+            $.$mol_state_arg.href('#!foo=bar/xxx');
+            $mol_assert_equal($.$mol_state_arg.value('foo'), 'bar');
+            $mol_assert_equal($.$mol_state_arg.value('xxx'), '');
+            $.$mol_state_arg.value('foo', 'lol');
+            $mol_assert_equal($.$mol_state_arg.href().replace(/.*#/, '#'), '#!foo=lol/xxx');
+            $.$mol_state_arg.value('foo', '');
+            $mol_assert_equal($.$mol_state_arg.href().replace(/.*#/, '#'), '#!foo/xxx');
+            $.$mol_state_arg.value('foo', null);
+            $mol_assert_equal($.$mol_state_arg.href().replace(/.*#/, '#'), '#!xxx');
+        },
+        'nested args'($) {
+            const base = new $.$mol_state_arg('nested.');
+            class Nested extends $mol_state_arg {
+                constructor(prefix) {
+                    super(base.prefix + prefix);
+                }
+                static value = (key, next) => base.value(key, next);
+            }
+            $.$mol_state_arg.href('#!foo=bar/nested.xxx=123');
+            $mol_assert_equal(Nested.value('foo'), null);
+            $mol_assert_equal(Nested.value('xxx'), '123');
+            Nested.value('foo', 'lol');
+            $mol_assert_equal($.$mol_state_arg.href().replace(/.*#/, '#'), '#!foo=bar/nested.xxx=123/nested.foo=lol');
+        },
+    });
+})($ || ($ = {}));
+
+;
+"use strict";
+var $;
+(function ($) {
+    function parse(theme) {
+        if (theme === 'true')
+            return true;
+        if (theme === 'false')
+            return false;
+        return null;
+    }
+    /**
+     * Switcher between light/dark themes (usually for `mol_theme_auto` plugin).
+     * @see https://mol.hyoo.ru/#!section=demos/demo=mol_lights_demo
+     */
+    function $mol_lights(next) {
+        const arg = parse(this.$mol_state_arg.value('mol_lights'));
+        const base = this.$mol_media.match('(prefers-color-scheme: light)');
+        if (next === undefined) {
+            return arg ?? this.$mol_state_local.value('$mol_lights') ?? base;
+        }
+        else {
+            if (arg === null) {
+                this.$mol_state_local.value('$mol_lights', next === base ? null : next);
+            }
+            else {
+                this.$mol_state_arg.value('mol_lights', String(next));
+            }
+            return next;
+        }
+    }
+    $.$mol_lights = $mol_lights;
+})($ || ($ = {}));
+
+;
+"use strict";
+var $;
 (function ($) {
     $mol_test({
         'null by default'() {
@@ -3491,6 +3525,33 @@ var $;
             $mol_assert_equal($mol_state_session.value(key), '$mol_state_session_test');
             $mol_state_session.value(key, null);
             $mol_assert_equal($mol_state_session.value(key), null);
+        },
+    });
+})($ || ($ = {}));
+
+;
+"use strict";
+var $;
+(function ($_1) {
+    $mol_test({
+        'system mode follows the device, not a light choice stored by another app'($) {
+            const device = (light) => {
+                const context = Object.create($);
+                context.$mol_lights = () => !light;
+                context.$mol_media = class extends $.$mol_media {
+                    static match() {
+                        return light;
+                    }
+                };
+                return $bog_theme_auto.make({ $: context });
+            };
+            const night = device(false);
+            $mol_assert_equal(night.mode(), 'system');
+            $mol_assert_equal(night.theme(), night.theme_dark());
+            $mol_assert_equal(night.is_light_now(), false);
+            const day = device(true);
+            $mol_assert_equal(day.theme(), day.theme_light());
+            $mol_assert_equal(day.is_light_now(), true);
         },
     });
 })($ || ($ = {}));
@@ -3542,14 +3603,18 @@ var $;
             $mol_assert_equal(uri.startsWith('https://t.me/Dev_cmyser?text='), true);
             $mol_assert_equal(decodeURIComponent(uri).includes('есть задача на веб-приложение'), true);
         },
-        /** Тема читает системную настройку через `this.$.$mol_lights()` — подменяем её в контексте. */
-        'lights follow substituted $mol_lights'($) {
-            const day = Object.create($);
-            day.$mol_lights = () => true;
-            const night = Object.create($);
-            night.$mol_lights = () => false;
-            $mol_assert_equal($bog_apps_app.make({ $: day }).lights(), 'light');
-            $mol_assert_equal($bog_apps_app.make({ $: night }).lights(), 'dark');
+        'lights follow the device color scheme'($) {
+            const device = (light) => {
+                const context = Object.create($);
+                context.$mol_media = class extends $.$mol_media {
+                    static match() {
+                        return light;
+                    }
+                };
+                return context;
+            };
+            $mol_assert_equal($bog_apps_app.make({ $: device(true) }).lights(), 'light');
+            $mol_assert_equal($bog_apps_app.make({ $: device(false) }).lights(), 'dark');
         },
         /** Хранилище тоже берётся из контекста — подсовываем объект в памяти вместо localStorage. */
         'saved theme mode beats substituted system preference'($) {
@@ -3565,7 +3630,11 @@ var $;
                 }
             }
             const context = Object.create($);
-            context.$mol_lights = () => true;
+            context.$mol_media = class extends $.$mol_media {
+                static match() {
+                    return true;
+                }
+            };
             context.$mol_state_local = Storage_mock;
             const app = $bog_apps_app.make({ $: context });
             const key = `${app.Theme()}.mode()`;
