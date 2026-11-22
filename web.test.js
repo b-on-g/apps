@@ -3632,6 +3632,12 @@ var $;
             $mol_assert_equal(app.case_links('ilasstroy').length, 1);
             $mol_assert_equal(app.case_links('ilasstroy')[0], app.Case_demo('ilasstroy'));
         },
+        'price is shown only for cases that have it'() {
+            const app = new $bog_apps_app;
+            $mol_assert_equal(app.case_price('ilasstroy'), '15 000 ₽');
+            $mol_assert_equal(app.case_parts('ilasstroy').includes(app.Case_price('ilasstroy')), true);
+            $mol_assert_equal(app.case_parts('gram').includes(app.Case_price('gram')), false);
+        },
         'tg_uri carries prefilled message'() {
             const app = new $bog_apps_app;
             const uri = app.tg_uri();

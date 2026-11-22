@@ -5085,43 +5085,43 @@ declare namespace $ {
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_link__uri_bog_apps_app_12 = $mol_type_enforce<
+	type $mol_view__sub_bog_apps_app_12 = $mol_type_enforce<
+		readonly(any)[]
+		,
+		ReturnType< $mol_view['sub'] >
+	>
+	type $mol_link__uri_bog_apps_app_13 = $mol_type_enforce<
 		ReturnType< $bog_apps_app['case_demo_uri'] >
 		,
 		ReturnType< $mol_link['uri'] >
 	>
-	type $mol_link__target_bog_apps_app_13 = $mol_type_enforce<
+	type $mol_link__target_bog_apps_app_14 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link['target'] >
 	>
-	type $mol_link__sub_bog_apps_app_14 = $mol_type_enforce<
+	type $mol_link__sub_bog_apps_app_15 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_link['sub'] >
 	>
-	type $mol_link__uri_bog_apps_app_15 = $mol_type_enforce<
+	type $mol_link__uri_bog_apps_app_16 = $mol_type_enforce<
 		ReturnType< $bog_apps_app['case_source_uri'] >
 		,
 		ReturnType< $mol_link['uri'] >
 	>
-	type $mol_link__target_bog_apps_app_16 = $mol_type_enforce<
+	type $mol_link__target_bog_apps_app_17 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link['target'] >
 	>
-	type $mol_link__sub_bog_apps_app_17 = $mol_type_enforce<
+	type $mol_link__sub_bog_apps_app_18 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_link['sub'] >
 	>
-	type $mol_view__sub_bog_apps_app_18 = $mol_type_enforce<
-		ReturnType< $bog_apps_app['case_links'] >
-		,
-		ReturnType< $mol_view['sub'] >
-	>
 	type $mol_view__sub_bog_apps_app_19 = $mol_type_enforce<
-		readonly(any)[]
+		ReturnType< $bog_apps_app['case_links'] >
 		,
 		ReturnType< $mol_view['sub'] >
 	>
@@ -5140,55 +5140,55 @@ declare namespace $ {
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $bog_qr__uri_bog_apps_app_23 = $mol_type_enforce<
+	type $mol_view__sub_bog_apps_app_23 = $mol_type_enforce<
+		readonly(any)[]
+		,
+		ReturnType< $mol_view['sub'] >
+	>
+	type $bog_qr__uri_bog_apps_app_24 = $mol_type_enforce<
 		ReturnType< $bog_apps_app['share_uri'] >
 		,
 		ReturnType< $bog_qr['uri'] >
 	>
-	type $mol_view__sub_bog_apps_app_24 = $mol_type_enforce<
+	type $mol_view__sub_bog_apps_app_25 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_pick__hint_bog_apps_app_25 = $mol_type_enforce<
+	type $mol_pick__hint_bog_apps_app_26 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_pick['hint'] >
 	>
-	type $mol_pick__trigger_content_bog_apps_app_26 = $mol_type_enforce<
+	type $mol_pick__trigger_content_bog_apps_app_27 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_pick['trigger_content'] >
 	>
-	type $mol_pick__bubble_content_bog_apps_app_27 = $mol_type_enforce<
+	type $mol_pick__bubble_content_bog_apps_app_28 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_pick['bubble_content'] >
 	>
-	type $mol_link__uri_bog_apps_app_28 = $mol_type_enforce<
+	type $mol_link__uri_bog_apps_app_29 = $mol_type_enforce<
 		ReturnType< $bog_apps_app['tg_uri'] >
 		,
 		ReturnType< $mol_link['uri'] >
 	>
-	type $mol_link__target_bog_apps_app_29 = $mol_type_enforce<
+	type $mol_link__target_bog_apps_app_30 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link['target'] >
 	>
-	type $mol_link__sub_bog_apps_app_30 = $mol_type_enforce<
+	type $mol_link__sub_bog_apps_app_31 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_link['sub'] >
 	>
-	type $bog_theme_toggle__theme_auto_bog_apps_app_31 = $mol_type_enforce<
+	type $bog_theme_toggle__theme_auto_bog_apps_app_32 = $mol_type_enforce<
 		ReturnType< $bog_apps_app['Theme'] >
 		,
 		ReturnType< $bog_theme_toggle['theme_auto'] >
-	>
-	type $mol_view__sub_bog_apps_app_32 = $mol_type_enforce<
-		readonly(any)[]
-		,
-		ReturnType< $mol_view['sub'] >
 	>
 	type $mol_view__sub_bog_apps_app_33 = $mol_type_enforce<
 		readonly(any)[]
@@ -5200,80 +5200,80 @@ declare namespace $ {
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_view__dom_name_bog_apps_app_35 = $mol_type_enforce<
-		string
-		,
-		ReturnType< $mol_view['dom_name'] >
-	>
-	type $mol_view__sub_bog_apps_app_36 = $mol_type_enforce<
+	type $mol_view__sub_bog_apps_app_35 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_view__dom_name_bog_apps_app_37 = $mol_type_enforce<
+	type $mol_view__dom_name_bog_apps_app_36 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_view['dom_name'] >
 	>
-	type $mol_view__sub_bog_apps_app_38 = $mol_type_enforce<
+	type $mol_view__sub_bog_apps_app_37 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
+	>
+	type $mol_view__dom_name_bog_apps_app_38 = $mol_type_enforce<
+		string
+		,
+		ReturnType< $mol_view['dom_name'] >
 	>
 	type $mol_view__sub_bog_apps_app_39 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_view__dom_name_bog_apps_app_40 = $mol_type_enforce<
-		string
-		,
-		ReturnType< $mol_view['dom_name'] >
-	>
-	type $mol_view__sub_bog_apps_app_41 = $mol_type_enforce<
+	type $mol_view__sub_bog_apps_app_40 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_link__uri_bog_apps_app_42 = $mol_type_enforce<
+	type $mol_view__dom_name_bog_apps_app_41 = $mol_type_enforce<
+		string
+		,
+		ReturnType< $mol_view['dom_name'] >
+	>
+	type $mol_view__sub_bog_apps_app_42 = $mol_type_enforce<
+		readonly(any)[]
+		,
+		ReturnType< $mol_view['sub'] >
+	>
+	type $mol_link__uri_bog_apps_app_43 = $mol_type_enforce<
 		ReturnType< $bog_apps_app['tg_uri'] >
 		,
 		ReturnType< $mol_link['uri'] >
 	>
-	type $mol_link__target_bog_apps_app_43 = $mol_type_enforce<
+	type $mol_link__target_bog_apps_app_44 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link['target'] >
 	>
-	type $mol_link__sub_bog_apps_app_44 = $mol_type_enforce<
+	type $mol_link__sub_bog_apps_app_45 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_link['sub'] >
 	>
-	type $mol_view__dom_name_bog_apps_app_45 = $mol_type_enforce<
+	type $mol_view__dom_name_bog_apps_app_46 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_view['dom_name'] >
 	>
-	type $mol_view__sub_bog_apps_app_46 = $mol_type_enforce<
+	type $mol_view__sub_bog_apps_app_47 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_button_minor__click_bog_apps_app_47 = $mol_type_enforce<
+	type $mol_button_minor__click_bog_apps_app_48 = $mol_type_enforce<
 		ReturnType< $bog_apps_app['cases_scroll'] >
 		,
 		ReturnType< $mol_button_minor['click'] >
 	>
-	type $mol_button_minor__sub_bog_apps_app_48 = $mol_type_enforce<
+	type $mol_button_minor__sub_bog_apps_app_49 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_button_minor['sub'] >
-	>
-	type $mol_view__sub_bog_apps_app_49 = $mol_type_enforce<
-		readonly(any)[]
-		,
-		ReturnType< $mol_view['sub'] >
 	>
 	type $mol_view__sub_bog_apps_app_50 = $mol_type_enforce<
 		readonly(any)[]
@@ -5286,47 +5286,47 @@ declare namespace $ {
 		ReturnType< $mol_view['sub'] >
 	>
 	type $mol_view__sub_bog_apps_app_52 = $mol_type_enforce<
+		readonly(any)[]
+		,
+		ReturnType< $mol_view['sub'] >
+	>
+	type $mol_view__sub_bog_apps_app_53 = $mol_type_enforce<
 		ReturnType< $bog_apps_app['feature_cards'] >
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_view__dom_name_bog_apps_app_53 = $mol_type_enforce<
+	type $mol_view__dom_name_bog_apps_app_54 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_view['dom_name'] >
 	>
-	type $mol_view__sub_bog_apps_app_54 = $mol_type_enforce<
-		readonly(any)[]
-		,
-		ReturnType< $mol_view['sub'] >
-	>
 	type $mol_view__sub_bog_apps_app_55 = $mol_type_enforce<
-		ReturnType< $bog_apps_app['case_cards'] >
+		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
 	>
 	type $mol_view__sub_bog_apps_app_56 = $mol_type_enforce<
+		ReturnType< $bog_apps_app['case_cards'] >
+		,
+		ReturnType< $mol_view['sub'] >
+	>
+	type $mol_view__sub_bog_apps_app_57 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_view__dom_name_bog_apps_app_57 = $mol_type_enforce<
+	type $mol_view__dom_name_bog_apps_app_58 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_view['dom_name'] >
 	>
-	type $mol_view__sub_bog_apps_app_58 = $mol_type_enforce<
-		readonly(any)[]
-		,
-		ReturnType< $mol_view['sub'] >
-	>
 	type $mol_view__sub_bog_apps_app_59 = $mol_type_enforce<
-		ReturnType< $bog_apps_app['step_cards'] >
+		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
 	>
 	type $mol_view__sub_bog_apps_app_60 = $mol_type_enforce<
-		readonly(any)[]
+		ReturnType< $bog_apps_app['step_cards'] >
 		,
 		ReturnType< $mol_view['sub'] >
 	>
@@ -5345,50 +5345,50 @@ declare namespace $ {
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_link__uri_bog_apps_app_64 = $mol_type_enforce<
+	type $mol_view__sub_bog_apps_app_64 = $mol_type_enforce<
+		readonly(any)[]
+		,
+		ReturnType< $mol_view['sub'] >
+	>
+	type $mol_link__uri_bog_apps_app_65 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link['uri'] >
 	>
-	type $mol_link__sub_bog_apps_app_65 = $mol_type_enforce<
+	type $mol_link__sub_bog_apps_app_66 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_link['sub'] >
 	>
-	type $mol_link__uri_bog_apps_app_66 = $mol_type_enforce<
+	type $mol_link__uri_bog_apps_app_67 = $mol_type_enforce<
 		ReturnType< $bog_apps_app['tg_uri'] >
 		,
 		ReturnType< $mol_link['uri'] >
 	>
-	type $mol_link__target_bog_apps_app_67 = $mol_type_enforce<
+	type $mol_link__target_bog_apps_app_68 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link['target'] >
 	>
-	type $mol_link__sub_bog_apps_app_68 = $mol_type_enforce<
+	type $mol_link__sub_bog_apps_app_69 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_link['sub'] >
 	>
-	type $mol_link__uri_bog_apps_app_69 = $mol_type_enforce<
+	type $mol_link__uri_bog_apps_app_70 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link['uri'] >
 	>
-	type $mol_link__target_bog_apps_app_70 = $mol_type_enforce<
+	type $mol_link__target_bog_apps_app_71 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link['target'] >
 	>
-	type $mol_link__sub_bog_apps_app_71 = $mol_type_enforce<
+	type $mol_link__sub_bog_apps_app_72 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_link['sub'] >
-	>
-	type $mol_view__sub_bog_apps_app_72 = $mol_type_enforce<
-		readonly(any)[]
-		,
-		ReturnType< $mol_view['sub'] >
 	>
 	type $mol_view__sub_bog_apps_app_73 = $mol_type_enforce<
 		readonly(any)[]
@@ -5400,15 +5400,15 @@ declare namespace $ {
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_view__dom_name_bog_apps_app_75 = $mol_type_enforce<
-		string
-		,
-		ReturnType< $mol_view['dom_name'] >
-	>
-	type $mol_view__sub_bog_apps_app_76 = $mol_type_enforce<
+	type $mol_view__sub_bog_apps_app_75 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
+	>
+	type $mol_view__dom_name_bog_apps_app_76 = $mol_type_enforce<
+		string
+		,
+		ReturnType< $mol_view['dom_name'] >
 	>
 	type $mol_view__sub_bog_apps_app_77 = $mol_type_enforce<
 		readonly(any)[]
@@ -5421,6 +5421,11 @@ declare namespace $ {
 		ReturnType< $mol_view['sub'] >
 	>
 	type $mol_view__sub_bog_apps_app_79 = $mol_type_enforce<
+		ReturnType< $bog_apps_app['case_parts'] >
+		,
+		ReturnType< $mol_view['sub'] >
+	>
+	type $mol_view__sub_bog_apps_app_80 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
@@ -5438,12 +5443,15 @@ declare namespace $ {
 		Case_title( id: any): $mol_view
 		case_text( id: any): string
 		Case_text( id: any): $mol_view
+		case_price( id: any): string
+		Case_price( id: any): $mol_view
 		case_demo_uri( id: any): string
 		Case_demo( id: any): $mol_link
 		case_source_uri( id: any): string
 		Case_source( id: any): $mol_link
 		case_links( id: any): readonly(any)[]
 		Case_links( id: any): $mol_view
+		case_parts( id: any): readonly(any)[]
 		step_num( id: any): string
 		Step_num( id: any): $mol_view
 		step_title( id: any): string
@@ -5518,6 +5526,8 @@ declare namespace $.$$ {
         case_text(id: string): string;
         case_demo_uri(id: string): string;
         case_source_uri(id: string): string;
+        case_price(id: string): string;
+        case_parts(id: string): $mol_view[];
         case_links(id: string): $.$mol_link[];
         step_cards(): $mol_view[];
         step_num(i: number): string;

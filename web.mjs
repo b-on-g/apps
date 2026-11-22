@@ -12022,6 +12022,14 @@ var $;
 			(obj.sub) = () => ([(this.case_text(id))]);
 			return obj;
 		}
+		case_price(id){
+			return "";
+		}
+		Case_price(id){
+			const obj = new this.$.$mol_view();
+			(obj.sub) = () => ([(this.case_price(id))]);
+			return obj;
+		}
 		case_demo_uri(id){
 			return "";
 		}
@@ -12049,6 +12057,14 @@ var $;
 			const obj = new this.$.$mol_view();
 			(obj.sub) = () => ((this.case_links(id)));
 			return obj;
+		}
+		case_parts(id){
+			return [
+				(this.Case_title(id)), 
+				(this.Case_text(id)), 
+				(this.Case_price(id)), 
+				(this.Case_links(id))
+			];
 		}
 		step_num(id){
 			return "";
@@ -12344,11 +12360,7 @@ var $;
 		}
 		Case(id){
 			const obj = new this.$.$mol_view();
-			(obj.sub) = () => ([
-				(this.Case_title(id)), 
-				(this.Case_text(id)), 
-				(this.Case_links(id))
-			]);
+			(obj.sub) = () => ((this.case_parts(id)));
 			return obj;
 		}
 		Step(id){
@@ -12372,6 +12384,7 @@ var $;
 	($mol_mem_key(($.$bog_apps_app.prototype), "Feature_text"));
 	($mol_mem_key(($.$bog_apps_app.prototype), "Case_title"));
 	($mol_mem_key(($.$bog_apps_app.prototype), "Case_text"));
+	($mol_mem_key(($.$bog_apps_app.prototype), "Case_price"));
 	($mol_mem_key(($.$bog_apps_app.prototype), "Case_demo"));
 	($mol_mem_key(($.$bog_apps_app.prototype), "Case_source"));
 	($mol_mem_key(($.$bog_apps_app.prototype), "Case_links"));
@@ -12621,6 +12634,7 @@ var $;
                 text: 'Сайт ремонтно-строительной компании: галереи работ, калькулятор стоимости ремонта, заявка на смету прямо на почту. Страницы отрисованы заранее для поисковиков, на телефоне работает как приложение.',
                 demo: 'https://ilasstroy.ru',
                 source: '',
+                price: '15 000 ₽',
             },
         };
         const steps = [
@@ -12671,6 +12685,17 @@ var $;
             }
             case_source_uri(id) {
                 return cases[id].source;
+            }
+            case_price(id) {
+                return cases[id].price ?? '';
+            }
+            case_parts(id) {
+                return [
+                    this.Case_title(id),
+                    this.Case_text(id),
+                    ...cases[id].price ? [this.Case_price(id)] : [],
+                    this.Case_links(id),
+                ];
             }
             case_links(id) {
                 return cases[id].source ? [this.Case_demo(id), this.Case_source(id)] : [this.Case_demo(id)];
@@ -12895,6 +12920,9 @@ var $;
             color: $bog_builderui_tokens.shade,
             lineHeight: '1.6',
             flex: { grow: 1 },
+        },
+        Case_price: {
+            font: { weight: 600, size: rem(1.0625) },
         },
         Case_links: {
             flex: { direction: 'row' },
