@@ -23,13 +23,16 @@ $bog_apps_app $bog_builderui_div
 				sub /
 					<= feature_text* \
 	Case* $mol_view
-		sub /
+		sub <= case_parts* /
 			<= Case_title* $mol_view
 				sub /
 					<= case_title* \
 			<= Case_text* $mol_view
 				sub /
 					<= case_text* \
+			<= Case_price* $mol_view
+				sub /
+					<= case_price* \
 			<= Case_links* $mol_view
 				sub <= case_links* /
 					<= Case_demo* $mol_link

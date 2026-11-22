@@ -228,6 +228,10 @@ namespace $ {
 			flex: { grow: 1 },
 		},
 
+		Case_price: {
+			font: { weight: 600, size: rem( 1.0625 ) },
+		},
+
 		Case_links: {
 			flex: { direction: 'row' },
 			gap: rem( 1 ),

@@ -57,8 +57,9 @@ namespace $.$$ {
 			text: 'Сайт ремонтно-строительной компании: галереи работ, калькулятор стоимости ремонта, заявка на смету прямо на почту. Страницы отрисованы заранее для поисковиков, на телефоне работает как приложение.',
 			demo: 'https://ilasstroy.ru',
 			source: '',
+			price: '15 000 ₽',
 		},
-	} as Record< string, { title: string, text: string, demo: string, source: string } >
+	} as Record< string, { title: string, text: string, demo: string, source: string, price?: string } >
 
 	const steps = [
 		{
@@ -119,6 +120,19 @@ namespace $.$$ {
 
 		case_source_uri( id: string ) {
 			return cases[ id ].source
+		}
+
+		case_price( id: string ) {
+			return cases[ id ].price ?? ''
+		}
+
+		case_parts( id: string ) {
+			return [
+				this.Case_title( id ),
+				this.Case_text( id ),
+				... cases[ id ].price ? [ this.Case_price( id ) ] : [],
+				this.Case_links( id ),
+			]
 		}
 
 		case_links( id: string ) {
