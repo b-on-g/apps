@@ -2162,6 +2162,18 @@ var $;
 var $;
 (function ($) {
     $mol_test({
+        async 'storage level'() {
+            // prevent async in tests
+            await $mol_wire_async($mol_storage).level();
+        }
+    });
+})($ || ($ = {}));
+
+;
+"use strict";
+var $;
+(function ($) {
+    $mol_test({
         'local get set delete'() {
             var key = '$mol_state_local_test:' + Math.random();
             $mol_assert_equal($mol_state_local.value(key), null);
@@ -3369,56 +3381,72 @@ var $;
 "use strict";
 var $;
 (function ($_1) {
-    $mol_test({
-        'skin puts presets on the host node'($) {
-            class Host extends $mol_view {
-                Skin() {
-                    return $bog_builderui_skin.make({ $: this.$, base: () => 'stone' });
+    var $$;
+    (function ($$) {
+        $mol_test({
+            'skin puts presets on the host node'($) {
+                class Host extends $mol_view {
+                    Skin() {
+                        return $bog_builderui_skin.make({ $: this.$, base: () => 'stone' });
+                    }
+                    plugins() {
+                        return [this.Skin()];
+                    }
                 }
-                plugins() {
-                    return [this.Skin()];
+                __decorate([
+                    $mol_mem
+                ], Host.prototype, "Skin", null);
+                const host = Host.make({ $ });
+                host.dom_tree();
+                const node = host.dom_node();
+                $mol_assert_equal(node.getAttribute('bog_builderui_base'), 'stone');
+                $mol_assert_equal(node.getAttribute('bog_builderui_lights'), 'system');
+                $mol_assert_equal(node.getAttribute('bog_builderui_theme'), 'sky');
+                $mol_assert_equal(node.getAttribute('bog_builderui_radius'), 'medium');
+                $mol_assert_equal(node.getAttribute('mol_theme'), null);
+                host.destructor();
+            },
+            'skin stops input zoom on ios only'($) {
+                const zoom_after = (agent) => {
+                    const meta = { content: 'width=device-width, initial-scale=1', getAttribute: () => meta.content, setAttribute: (_, val) => { meta.content = val; } };
+                    const document = { querySelector: () => meta };
+                    const context = { ...$.$mol_dom_context, document, navigator: { userAgent: agent, platform: '', maxTouchPoints: 0 } };
+                    const skin = $bog_builderui_skin.make({ $: $.$mol_ambient({ $mol_dom_context: context }) });
+                    skin.ios_zoom_fix();
+                    skin.ios_zoom_fix();
+                    return meta.content;
+                };
+                $mol_assert_equal(zoom_after('Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X)'), 'width=device-width, initial-scale=1, maximum-scale=1');
+                $mol_assert_equal(zoom_after('Mozilla/5.0 (Linux; Android 14)'), 'width=device-width, initial-scale=1');
+            },
+            'skin follows the host'($) {
+                class Host extends $mol_view {
+                    lights(next) {
+                        return next ?? 'dark';
+                    }
+                    Skin() {
+                        return $bog_builderui_skin.make({ $: this.$, lights: () => this.lights() });
+                    }
+                    plugins() {
+                        return [this.Skin()];
+                    }
                 }
-            }
-            __decorate([
-                $mol_mem
-            ], Host.prototype, "Skin", null);
-            const host = Host.make({ $ });
-            host.dom_tree();
-            const node = host.dom_node();
-            $mol_assert_equal(node.getAttribute('bog_builderui_base'), 'stone');
-            $mol_assert_equal(node.getAttribute('bog_builderui_lights'), 'system');
-            $mol_assert_equal(node.getAttribute('bog_builderui_theme'), 'sky');
-            $mol_assert_equal(node.getAttribute('bog_builderui_radius'), 'medium');
-            $mol_assert_equal(node.getAttribute('mol_theme'), null);
-            host.destructor();
-        },
-        'skin follows the host'($) {
-            class Host extends $mol_view {
-                lights(next) {
-                    return next ?? 'dark';
-                }
-                Skin() {
-                    return $bog_builderui_skin.make({ $: this.$, lights: () => this.lights() });
-                }
-                plugins() {
-                    return [this.Skin()];
-                }
-            }
-            __decorate([
-                $mol_mem
-            ], Host.prototype, "lights", null);
-            __decorate([
-                $mol_mem
-            ], Host.prototype, "Skin", null);
-            const host = Host.make({ $ });
-            host.dom_tree();
-            $mol_assert_equal(host.dom_node().getAttribute('bog_builderui_lights'), 'dark');
-            host.lights('light');
-            host.dom_tree();
-            $mol_assert_equal(host.dom_node().getAttribute('bog_builderui_lights'), 'light');
-            host.destructor();
-        },
-    });
+                __decorate([
+                    $mol_mem
+                ], Host.prototype, "lights", null);
+                __decorate([
+                    $mol_mem
+                ], Host.prototype, "Skin", null);
+                const host = Host.make({ $ });
+                host.dom_tree();
+                $mol_assert_equal(host.dom_node().getAttribute('bog_builderui_lights'), 'dark');
+                host.lights('light');
+                host.dom_tree();
+                $mol_assert_equal(host.dom_node().getAttribute('bog_builderui_lights'), 'light');
+                host.destructor();
+            },
+        });
+    })($$ = $_1.$$ || ($_1.$$ = {}));
 })($ || ($ = {}));
 
 ;
@@ -3487,13 +3515,14 @@ var $;
             return false;
         return null;
     }
+    // Get once because chrome switches to light on print
+    const base = $.$mol_media.match('(prefers-color-scheme: light)');
     /**
      * Switcher between light/dark themes (usually for `mol_theme_auto` plugin).
      * @see https://mol.hyoo.ru/#!section=demos/demo=mol_lights_demo
      */
     function $mol_lights(next) {
         const arg = parse(this.$mol_state_arg.value('mol_lights'));
-        const base = this.$mol_media.match('(prefers-color-scheme: light)');
         if (next === undefined) {
             return arg ?? this.$mol_state_local.value('$mol_lights') ?? base;
         }
@@ -3592,10 +3621,16 @@ var $;
         'all content sections are filled'() {
             const app = new $bog_apps_app;
             $mol_assert_equal(app.feature_cards().length, 6);
-            $mol_assert_equal(app.case_cards().length, 4);
+            $mol_assert_equal(app.case_cards().length, 5);
             $mol_assert_equal(app.step_cards().length, 4);
             $mol_assert_equal(app.step_num(0), '01');
             $mol_assert_equal(app.case_title('gram'), 'Gram');
+        },
+        'case without public source shows only the demo link'() {
+            const app = new $bog_apps_app;
+            $mol_assert_equal(app.case_links('gram').length, 2);
+            $mol_assert_equal(app.case_links('ilasstroy').length, 1);
+            $mol_assert_equal(app.case_links('ilasstroy')[0], app.Case_demo('ilasstroy'));
         },
         'tg_uri carries prefilled message'() {
             const app = new $bog_apps_app;

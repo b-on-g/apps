@@ -61,6 +61,7 @@
 	pack feedback2 git \https://github.com/b-on-g/feedback2.git
 	pack forge git \https://github.com/b-on-g/forge.git
 	pack langleak git \https://github.com/b-on-g/langleak.git
+	pack keyqr git \https://github.com/b-on-g/keyqr.git
 	pack meta git \https://github.com/b-on-g/meta.git
 	pack popup git \https://github.com/b-on-g/popup.git
 	pack qr git \https://github.com/b-on-g/qr.git
@@ -74,6 +75,8 @@
 	pack version git \https://github.com/b-on-g/version.git
 	pack apps git \https://github.com/b-on-g/apps.git
 	pack gram git \https://github.com/b-on-g/gram.git
+	pack jj git \https://github.com/b-on-g/jj.git
+	pack install git \https://github.com/b-on-g/install.git
 	pack invest git \https://github.com/b-on-g/invest.git
 	pack slop git \https://github.com/b-on-g/slop.git
 	pack worm git \https://github.com/b-on-g/worm.git
@@ -90,6 +93,7 @@
 	pack brl git \https://github.com/b-on-g/brl.git
 	pack techradar git \https://github.com/b-on-g/techradar.git
 	pack peek git \https://github.com/b-on-g/peek.git
+	pack stschool git \https://github.com/b-on-g/stschool.git
 	pack page git \https://github.com/b-on-g/page.git
 	pack quest git \https://github.com/b-on-g/quest.git
 	pack testops git \https://github.com/b-on-g/testops.git
@@ -108,6 +112,30 @@
 	pack vmap git \https://github.com/b-on-g/vmap.git
 	pack trip git \https://github.com/b-on-g/trip.git
 	pack probe git \https://github.com/b-on-g/probe.git
+	pack gamengine git \https://github.com/b-on-g/gamengine.git
+	pack doodle git \https://github.com/b-on-g/doodle.git
+	pack flow git \https://github.com/b-on-g/flow.git
+	pack selection git \https://github.com/b-on-g/selection.git
+	pack max git \https://github.com/b-on-g/max.git
+	pack rash git \https://github.com/b-on-g/rash.git
+	pack hub git \https://github.com/b-on-g/hub.git
+	pack atelier git \https://github.com/b-on-g/atelier.git
+	pack gtk git \https://github.com/b-on-g/gtk.git
+	pack birthdaycase git \https://github.com/b-on-g/birthday-case.git
+	pack merchquarium git \https://github.com/b-on-g/merchquarium.git
+	pack fragile git \https://github.com/b-on-g/fragile.git
+	pack gipergram git \https://github.com/b-on-g/gipergram.git
+	pack pair git \https://github.com/b-on-g/pair.git
+	pack rsdemo git \https://github.com/b-on-g/rsdemo.git
+	pack build2 git \https://github.com/b-on-g/build2.git
+	pack zig git \https://github.com/b-on-g/zig.git
+	pack wire git \https://github.com/b-on-g/wire.git
+	pack brelok git \https://github.com/b-on-g/brelok.git
+	pack microtodo git \https://github.com/b-on-g/microtodo.git
+	pack ssr git \https://github.com/b-on-g/ssr.git
+	pack id git \https://github.com/b-on-g/id.git
+	pack passkey git \https://github.com/b-on-g/passkey.git
+	pack collider git \https://github.com/b-on-g/collider.git
 \/mol
 	pack icon git \https://github.com/nin-jin/mol_icon.git
 \/mol/view
