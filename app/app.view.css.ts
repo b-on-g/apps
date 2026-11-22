@@ -56,6 +56,22 @@ namespace $ {
 			gap: rem( 0.5 ),
 		},
 
+		Share_pick_icon: {
+			color: $bog_builderui_tokens.control,
+		},
+
+		Share_qr_box: {
+			background: { color: '#ffffff' },
+			padding: rem( 0.75 ),
+			border: { radius: rem( 0.75 ) },
+		},
+
+		Share_qr: {
+			width: rem( 16 ),
+			height: rem( 16 ),
+			maxWidth: '100%',
+		},
+
 		Top_tg: {
 			color: $bog_builderui_tokens.control,
 			font: { weight: 600, size: rem( 0.9375 ) },

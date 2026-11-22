@@ -6,10 +6,18 @@ namespace $ {
 			const app = new $bog_apps_app
 
 			$mol_assert_equal( app.feature_cards().length, 6 )
-			$mol_assert_equal( app.case_cards().length, 4 )
+			$mol_assert_equal( app.case_cards().length, 5 )
 			$mol_assert_equal( app.step_cards().length, 4 )
 			$mol_assert_equal( app.step_num( 0 ), '01' )
 			$mol_assert_equal( app.case_title( 'gram' ), 'Gram' )
+		},
+
+		'case without public source shows only the demo link'() {
+			const app = new $bog_apps_app
+
+			$mol_assert_equal( app.case_links( 'gram' ).length, 2 )
+			$mol_assert_equal( app.case_links( 'ilasstroy' ).length, 1 )
+			$mol_assert_equal( app.case_links( 'ilasstroy' )[ 0 ], app.Case_demo( 'ilasstroy' ) )
 		},
 
 		'tg_uri carries prefilled message'() {

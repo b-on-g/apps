@@ -31,7 +31,7 @@ $bog_apps_app $bog_builderui_div
 				sub /
 					<= case_text* \
 			<= Case_links* $mol_view
-				sub /
+				sub <= case_links* /
 					<= Case_demo* $mol_link
 						uri <= case_demo_uri* \
 						target \_blank
@@ -61,6 +61,15 @@ $bog_apps_app $bog_builderui_div
 						\Кирилл Новгородцев
 				<= Top_tools $mol_view
 					sub /
+						<= Share_pick $mol_pick
+							hint \QR-код этого сайта
+							trigger_content /
+								<= Share_pick_icon $mol_icon_qrcode_scan
+							bubble_content /
+								<= Share_qr_box $mol_view
+									sub /
+										<= Share_qr $bog_qr
+											uri <= share_uri \https://b-on-g.github.io/apps/
 						<= Top_tg $mol_link
 							uri <= tg_uri \
 							target \_blank
