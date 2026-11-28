@@ -60,14 +60,11 @@ namespace $.$$ {
 			price: '15 000 ₽',
 		},
 		ragu: {
-                          title: 'RAGU',
-                          text: 'Демо GraphRAG-движка RAGU для конференции EMNLP 2026:
-  движок превращает тексты в граф знаний и отвечает по нему на вопросы. На сайте граф
-  готовых корпусов можно крутить трёхмерным облаком, а в чате видно, из каких сущностей,
-  связей и фрагментов текста собран ответ.',
-                          demo: 'https://raguteam.github.io/web/#!mock=1',
-                          source: 'https://github.com/RaguTeam/web',
-                  },
+        	title: 'RAGU',
+         	text: "Демо GraphRAG-движка RAGU для конференции EMNLP 2026: движок превращает тексты в граф знаний и отвечает по нему на вопросы. На сайте граф готовых корпусов можно крутить трёхмерным облаком, а в чате видно, из каких сущностей, связей и фрагментов текста собран ответ.",
+        	demo: 'https://raguteam.github.io/web/#!mock=1',
+         	source: 'https://github.com/RaguTeam/web',
+        },
 	} as Record< string, { title: string, text: string, demo: string, source: string, price?: string } >
 
 	const steps = [
